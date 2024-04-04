@@ -5,7 +5,7 @@
 <p align="center">
     <img src="figures/logo.webp" width="150" style="margin-bottom: 0.2;"/>
 <p>
-<h2 align="center"> 🪄From Blurry to Clear: A Contrast-Driven Framework for Multimodal-Generalized Medical Image Segmentation</h2>
+<h2 align="center"> ✨From Blurry to Clear: A Contrast-Driven Framework for Multimodal-Generalized Medical Image Segmentation</h2>
 
 
 ## Overview🔍
@@ -18,7 +18,7 @@
 
 **_Abstract -_** Medical image segmentation plays an important role in clinical decision-making, treatment planning, and disease tracking. However, it still faces two major challenges. On the one hand, there is often a ``soft boundary'' between foreground and background in medical images, with poor illumination and low contrast further reducing the distinguishability of foreground and background within the image. On the other hand, co-occurrence phenomena are widespread in medical images, and learning these features is misleading to the model's judgment. To address these challenges, we propose a multimodal-generalized framework called Contrast-Driven Medical Image Segmentation (ConDSeg). First, we develop a Consistency Reinforcement training strategy dedicated to improving the Encoder's robustness in various illumination and contrast scenarios, enabling the model to extract high-quality features even in adverse environments. Second, we introduce a Semantic Information Decoupling (SID) module, which decouples features from the encoder into foreground, background, and uncertain regions, gradually acquiring the ability to reduce uncertainty during training. The Contrast-Driven Feature Aggregation (CDFA) module then uses the foreground and background information to guide multi-level feature fusion and key feature enhancement, further distinguishing between foreground and background. We also propose a Size-Aware Decoder to accurately locate individuals of different sizes in the image, thus avoiding erroneous learning of co-occurrence features. Extensive experiments on five medical image datasets across three modalities demonstrate the state-of-the-art performance of our method, proving its advanced nature and applicability to a wide range of medical image segmentation tasks.
 
-## Datasets🧾
+## Datasets📚
 To verify the performance and general applicability of our ConDSeg in the field of medical image segmentation, we conducted experiments on five challenging public datasets: Kvasir-SEG, Kvasir-Sessile, GlaS, ISIC-2016, and ISIC-2017, covering subdivision tasks across three modalities. 
 
 | Dataset      | Modality                  | Anatomic region | Segmentation Target | Data Volume |
@@ -76,8 +76,8 @@ Kvasir-SEG
 ```
 
 ### Training
-- To train the first stage of ConDSeg, run: `train_stage1.py`
-- To train the second stage of ConDSeg, add the weights of the first stage to the `train_stage2.py` script and run it.
+- To train the first stage of ConDSeg, run: `train_stage1.py`.
+- To train the second stage of ConDSeg, add the weights of the first stage to the `train.py` script and run it.
 
 ### Evaluation
 - To evaluate the model and generate the prediction results, run: `test.py`.
