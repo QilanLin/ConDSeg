@@ -21,7 +21,7 @@
 ## Datasets📚
 To verify the performance and general applicability of our ConDSeg in the field of medical image segmentation, we conducted experiments on five challenging public datasets: Kvasir-SEG, Kvasir-Sessile, GlaS, ISIC-2016, and ISIC-2017, covering subdivision tasks across three modalities. 
 
-| Dataset      | Modality                  | Anatomic region | Segmentation Target | Data Volume |
+| Dataset      | Modality                  | Anatomic Region | Segmentation Target | Data Volume |
 |--------------|---------------------------|-----------------|---------------------|-------------|
 | Kvasir-SEG   | endoscope                 | colon           | polyp               | 1000        |
 | Kvasir-Sessile | endoscope               | colon           | polyp               | 196         |
