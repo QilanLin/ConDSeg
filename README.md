@@ -1,10 +1,4 @@
 
-
-
-
-<p align="center">
-    <img src="figures/logo.webp" width="150" style="margin-bottom: 0.2;"/>
-<p>
 <h2 align="center"> ✨From Blurry to Clear: A Contrast-Driven Framework for Multimodal-Generalized Medical Image Segmentation</h2>
 
 
