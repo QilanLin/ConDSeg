@@ -1,10 +1,9 @@
 
 <h2 align="center"> ✨From Blurry to Clear: A Contrast-Driven Framework for Multimodal-Generalized Medical Image Segmentation</h2>
 
-
 ## Overview🔍
 <div>
-    <img src="./figures/framework.jpg" width="96%" height="96%">
+    <img src="figures/framework.jpg" width="96%" height="96%">
 </div>
 
 **Figure 1. The framework of the proposed ConDSeg.**
