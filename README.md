@@ -32,12 +32,12 @@ For Kvasir-SEG, we followed the official recommendation, using a split of 880/12
 
 **Table 1. Quantitative comparison of ConDSeg with state-of-the-art methods on Kvasir-Sessile, Kvasir-SEG and GlaS datasets.**
 <div>
-    <img src="figures/comp_1.png" width="96%" height="96%">
+    <img src="figures/comp1.jpg" width="96%" height="96%">
 </div>
 
 **Table 2. Quantitative comparison of ConDSeg with state-of-the-art methods on ISIC-2016 and ISIC-2017 datasets.**
 <div>
-    <img src="figures/comp_2.png" width="40%" height="40%">
+    <img src="figures/comp2.jpg.png" width="40%" height="40%">
 </div>
 
 <br> </br>
