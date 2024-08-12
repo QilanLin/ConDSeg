@@ -1,5 +1,5 @@
 
-<h2 align="center"> ✨From Blurry to Clear: A Contrast-Driven Framework for Multimodal-Generalized Medical Image Segmentation</h2>
+<h2 align="center"> ✨ConDSeg: A General Medical Image Segmentation Framework via Contrast-Driven Feature Enhancement</h2>
 
 ## Overview🔍
 <div>
