@@ -1,5 +1,28 @@
 
-<h2 align="center"> ✨ConDSeg: A General Medical Image Segmentation Framework via Contrast-Driven Feature Enhancement</h2>
+<h2 align="center">✨ConDSeg: A General Medical Image Segmentation Framework via Contrast-Driven Feature Enhancement</h2>
+
+
+<p align="center">
+  <b>Mengqi Lei<sup>1</sup>, Haochen Wu<sup>1</sup>, Xinhua Lv<sup>1</sup>, Xin Wang<sup>2</sup></b>
+</p>
+
+<p align="center">
+  <sup>1</sup>China University of Geosciences, Wuhan 430074, China<br>
+  <sup>2</sup>Baidu Inc, Beijing, China<br>
+</p>
+
+<p align="center">
+  <!-- arXiv Badge -->
+  <a href="https://arxiv.org/abs/2412.08345" target="_blank">
+    <img src="https://img.shields.io/badge/arXiv-2412.08345-b31b1b.svg?style=default" alt="arXiv Paper">
+  </a>
+    
+  <!-- Contact Badge -->
+  <a href="mailto:mengqi-lei@163.com" target="_blank">
+    <img src="https://img.shields.io/badge/Contact-mengqi--lei%40163.com-blue.svg?style=default" alt="Contact Author">
+  </a>
+</p>
+
 
 ## Overview🔍
 <div>
