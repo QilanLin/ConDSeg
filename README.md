@@ -104,7 +104,12 @@ If you are interested in the version of ConDSeg that uses the Pyramid Vision Tra
 
 ## Cite our work📝
 ```bibtex
-Coming soon.
+@article{lei2024condseg,
+  title={ConDSeg: A General Medical Image Segmentation Framework via Contrast-Driven Feature Enhancement},
+  author={Lei, Mengqi and Wu, Haochen and Lv, Xinhua and Wang, Xin},
+  journal={arXiv preprint arXiv:2412.08345},
+  year={2024}
+}
 ```
 
 ## License📜
