@@ -23,6 +23,9 @@
   </a>
 </p>
 
+<p align="center">
+  🔥 Our work has been accepted by AAAI-2025!<br>
+</p>
 
 ## Overview🔍
 <div>
