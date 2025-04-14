@@ -12,14 +12,17 @@
 </p>
 
 <p align="center">
+  <!-- AAAI Badge -->
+  <a href="https://ojs.aaai.org/index.php/AAAI/article/view/32482" target="_blank">
+    <img src="https://img.shields.io/badge/AAAI-2025-blueviolet.svg?style=flat-square" alt="AAAI Proceeding">
+  </a>
   <!-- arXiv Badge -->
   <a href="https://arxiv.org/abs/2412.08345" target="_blank">
-    <img src="https://img.shields.io/badge/arXiv-2412.08345-b31b1b.svg?style=default" alt="arXiv Paper">
+    <img src="https://img.shields.io/badge/arXiv-2412.08345-b31b1b.svg?style=flat-square" alt="arXiv Paper">
   </a>
-    
   <!-- Contact Badge -->
   <a href="mailto:mengqi-lei@163.com" target="_blank">
-    <img src="https://img.shields.io/badge/Contact-mengqi--lei%40163.com-blue.svg?style=default" alt="Contact Author">
+    <img src="https://img.shields.io/badge/Contact-mengqi--lei%40163.com-blue.svg?style=flat-square" alt="Contact Author">
   </a>
 </p>
 
@@ -107,11 +110,14 @@ If you are interested in the version of ConDSeg that uses the Pyramid Vision Tra
 
 ## Cite our work📝
 ```bibtex
-@article{lei2024condseg,
+@inproceedings{lei2025condseg,
   title={ConDSeg: A General Medical Image Segmentation Framework via Contrast-Driven Feature Enhancement},
   author={Lei, Mengqi and Wu, Haochen and Lv, Xinhua and Wang, Xin},
-  journal={arXiv preprint arXiv:2412.08345},
-  year={2024}
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={39},
+  number={5},
+  pages={4571--4579},
+  year={2025}
 }
 ```
 
