@@ -53,9 +53,9 @@ class ConDSegStage1(nn.Module):
 
         """ Backbone: ResNet50 """
         """从ResNet50中提取出layer0, layer1, layer2, layer3"""
-        # backbone = resnet50()
+        backbone = resnet50()
         # 如果之前已经下载了预训练的ResNet50权重，就把上面的那行代码替换成下面的代码
-        backbone = resnet50(pretrained=True, progress=False)
+        # backbone = resnet50(pretrained=True, progress=False)
         self.layer0 = nn.Sequential(backbone.conv1, backbone.bn1, backbone.relu)  # [batch_size, 64, h/2, w/2]
         self.layer1 = nn.Sequential(backbone.maxpool, backbone.layer1)  # [batch_size, 256, h/4, w/4]
         self.layer2 = backbone.layer2  # [batch_size, 512, h/8, w/8]

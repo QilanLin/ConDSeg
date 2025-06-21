@@ -71,7 +71,8 @@ if __name__ == "__main__":
         def flush(self):
             for s in self.streams: s.flush()
     sys.stdout = Tee(sys.stdout, run_log_f)
-    sys.stderr = Tee(sys.stderr, run_log_f)
+    # Keep stderr untouched so that progress bars and warnings only show on console
+    sys.stderr = sys.__stderr__
 
     datetime_object = str(datetime.datetime.now())
     print_and_save(train_log_path, datetime_object)
