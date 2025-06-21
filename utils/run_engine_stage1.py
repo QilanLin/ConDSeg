@@ -10,8 +10,9 @@ from utils import calculate_metrics
 from tqdm import tqdm
 
 #
-torch.backends.cudnn.benchmark = True
-torch.backends.cudnn.deterministic = False
+if torch.cuda.is_available():  # Only set cudnn flags when using CUDA
+    torch.backends.cudnn.benchmark = True
+    torch.backends.cudnn.deterministic = False
 # import os
 # os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 import torch.nn.functional as F

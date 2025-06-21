@@ -14,8 +14,9 @@ from utils import seeding, create_dir, print_and_save, shuffling, epoch_time, ca
 from tqdm import tqdm
 
 
-torch.backends.cudnn.benchmark = True
-torch.backends.cudnn.deterministic = False
+if torch.cuda.is_available():  # Only use cudnn for CUDA devices
+    torch.backends.cudnn.benchmark = True
+    torch.backends.cudnn.deterministic = False
 # import os
 # os.environ['CUDA_LAUNCH_BLOCKING'] = "1"
 import torch.nn.functional as F

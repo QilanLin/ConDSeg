@@ -110,7 +110,7 @@ if __name__ == "__main__":
     seeding(42)
     size = (256, 256)
     """ Load the checkpoint """
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = torch.device('mps' if getattr(torch.backends, 'mps', None) and torch.backends.mps.is_available() else 'cpu')
     model = ConDSeg(256, 256)
     model = model.to(device)
     checkpoint_path = "path to the model.pth"

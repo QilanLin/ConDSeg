@@ -91,7 +91,8 @@ class ConDSegStage1(nn.Module):
 
 
 if __name__ == "__main__":
-    model = ConDSegStage1().cuda()
-    input_tensor = torch.randn(1, 3, 256, 256).cuda()
+    device = torch.device('mps' if getattr(torch.backends, 'mps', None) and torch.backends.mps.is_available() else 'cpu')
+    model = ConDSegStage1().to(device)
+    input_tensor = torch.randn(1, 3, 256, 256).to(device)
     output = model(input_tensor)
     print(output.shape)

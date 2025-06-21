@@ -12,8 +12,9 @@ from network.model_stage1 import ConDSegStage1
 from utils.metrics import DiceBCELoss
 
 #
-torch.backends.cudnn.benchmark = True
-torch.backends.cudnn.deterministic = False
+if torch.cuda.is_available():  # Only set cudnn flags when using CUDA
+    torch.backends.cudnn.benchmark = True
+    torch.backends.cudnn.deterministic = False
 
 from utils.run_engine_stage1 import load_data, train, evaluate, DATASET
 def my_seeding(seed):
@@ -102,7 +103,7 @@ if __name__ == "__main__":
     )
 
     """ Model """
-    device = torch.device('cuda')
+    device = torch.device('mps' if getattr(torch.backends, 'mps', None) and torch.backends.mps.is_available() else 'cpu')
     model = ConDSegStage1()
 
     if resume_path:

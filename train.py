@@ -11,9 +11,11 @@ from utils.utils import print_and_save, shuffling, epoch_time
 from network.model import ConDSeg
 from utils.metrics import DiceBCELoss
 
-#
-torch.backends.cudnn.benchmark = True
-torch.backends.cudnn.deterministic = False
+device = torch.device('mps' if getattr(torch.backends, 'mps', None) and torch.backends.mps.is_available() else 'cpu')
+
+if device.type == 'cuda':  # Only set cudnn flags when using CUDA
+    torch.backends.cudnn.benchmark = True
+    torch.backends.cudnn.deterministic = False
 
 from utils.run_engine import load_data, train, evaluate, DATASET
 
@@ -108,7 +110,6 @@ if __name__ == "__main__":
     )
 
     """ Model """
-    device = torch.device('cuda')
     model = ConDSeg()
 
     if pretrained_backbone:
