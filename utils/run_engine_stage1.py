@@ -6,7 +6,7 @@ import torch.nn as nn
 from torch.utils.data import Dataset
 from torchvision import transforms
 
-from utils import calculate_metrics
+from utils.utils import calculate_metrics
 from tqdm import tqdm
 
 #

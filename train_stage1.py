@@ -47,7 +47,7 @@ if __name__ == "__main__":
     current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
     folder_name = f"stage1_{dataset_name}_{val_name}_lr{lr}_{current_time}"
 
-    base_dir = "../data"
+    base_dir = "data"
     data_path = os.path.join(base_dir, dataset_name)
     save_dir = os.path.join("run_files", dataset_name, folder_name)
     if not os.path.exists(save_dir):
@@ -59,6 +59,19 @@ if __name__ == "__main__":
     train_log = open(train_log_path, "w")
     train_log.write("\n")
     train_log.close()
+
+    # Duplicate all stdout and stderr to a log file
+    import sys
+    run_log_path = os.path.join(save_dir, "run_train_stage1.log")
+    run_log_f = open(run_log_path, 'a')
+    class Tee:
+        def __init__(self, *streams): self.streams = streams
+        def write(self, data):
+            for s in self.streams: s.write(data)
+        def flush(self):
+            for s in self.streams: s.flush()
+    sys.stdout = Tee(sys.stdout, run_log_f)
+    sys.stderr = Tee(sys.stderr, run_log_f)
 
     datetime_object = str(datetime.datetime.now())
     print_and_save(train_log_path, datetime_object)
