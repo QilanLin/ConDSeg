@@ -100,6 +100,7 @@ Kvasir-SEG
 ### Training
 - To train the first stage of ConDSeg, run: `train_stage1.py`.
 - To train the second stage of ConDSeg, add the weights of the first stage to the `train.py` script and run it.
+- `train.py` requires a CPU or CUDA GPU environment. For Apple MPS, apply the custom patch above. Note that `aten::col2im` is still missing; see [PyTorch issue #151820](https://github.com/pytorch/pytorch/issues/151820).
 
 ### Evaluation
 - To evaluate the model and generate the prediction results, run: `test.py`.
