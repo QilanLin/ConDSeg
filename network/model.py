@@ -1,4 +1,5 @@
 import math
+import warnings
 import torch
 import torch.nn as nn
 from network.resnet import resnet50
@@ -261,8 +262,18 @@ class ContrastDrivenFeatureAggregation(nn.Module):
                                  kernel_size=self.kernel_size,
                                  padding=self.padding, stride=self.stride)
         else:
-            x_weighted = F.fold(x_weighted, output_size=(H, W), kernel_size=self.kernel_size,
-                                padding=self.padding, stride=self.stride)
+            try:
+                x_weighted = F.fold(x_weighted, output_size=(H, W),
+                                    kernel_size=self.kernel_size,
+                                    padding=self.padding, stride=self.stride)
+            except RuntimeError:
+                warnings.warn(
+                    "F.fold failed on device {}. Falling back to CPU. This may be slower.".format(x_weighted.device),
+                    RuntimeWarning,
+                )
+                x_weighted = F.fold(x_weighted.cpu(), output_size=(H, W),
+                                    kernel_size=self.kernel_size,
+                                    padding=self.padding, stride=self.stride).to(attn.device)
         x_weighted = self.proj(x_weighted.permute(0, 2, 3, 1))
         x_weighted = self.proj_drop(x_weighted)
         return x_weighted
