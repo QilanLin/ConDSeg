@@ -3,6 +3,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from pvtv2 import pvt_v2_b2
+from utils.utils import fold_mps
 
 
 class CBR(nn.Module):
@@ -270,8 +271,13 @@ class ContrastDrivenFeatureAggregation(nn.Module):
 
         x_weighted = (attn @ v).permute(0, 1, 4, 3, 2).reshape(
             B, self.dim * self.kernel_size * self.kernel_size, -1)
-        x_weighted = F.fold(x_weighted, output_size=(H, W), kernel_size=self.kernel_size,
-                            padding=self.padding, stride=self.stride)
+        if x_weighted.device.type == "mps":
+            x_weighted = fold_mps(x_weighted, output_size=(H, W),
+                                 kernel_size=self.kernel_size,
+                                 padding=self.padding, stride=self.stride)
+        else:
+            x_weighted = F.fold(x_weighted, output_size=(H, W), kernel_size=self.kernel_size,
+                                padding=self.padding, stride=self.stride)
         x_weighted = self.proj(x_weighted.permute(0, 2, 3, 1))
         x_weighted = self.proj_drop(x_weighted)
         return x_weighted
