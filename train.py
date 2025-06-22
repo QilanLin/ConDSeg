@@ -46,7 +46,7 @@ if __name__ == "__main__":
     lr_backbone = 1e-4
     early_stopping_patience = 100
 
-    pretrained_backbone = None
+    pretrained_backbone = "run_files/Kvasir-SEG/stage1_Kvasir-SEG_None_lr0.0001_20250621-180142/checkpoint.pth"
 
     resume_path = None
 

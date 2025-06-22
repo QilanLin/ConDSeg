@@ -1,0 +1,17 @@
+2025-06-22 20:30:54.763663
+
+Image Size: 256
+Batch Size: 12
+LR: 0.0001
+Epochs: 300
+Early Stopping Patience: 100
+Seed: 0
+
+Dataset Size:
+Train: 879 - Valid: 119
+
+Optimizer: Adam
+Loss: BCE Dice Loss
+
+Number of parameters: 45.552786M
+
