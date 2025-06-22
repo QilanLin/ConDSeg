@@ -2,6 +2,7 @@ import os
 import random
 import numpy as np
 import torch
+import torch.nn.functional as F
 from skimage.measure import label, regionprops, find_contours
 from sklearn.utils import shuffle
 from utils.metrics import precision, recall, F2, dice_score, jac_score
@@ -94,6 +95,52 @@ def calculate_metrics(y_true, y_pred):
     score_acc = accuracy_score(y_true, y_pred)
 
     return [score_jaccard, score_f1, score_recall, score_precision, score_acc, score_fbeta]
+
+
+def fold_mps(x: torch.Tensor, output_size: tuple, kernel_size: int,
+             padding: int = 0, stride: int = 1, dilation: int = 1) -> torch.Tensor:
+    """Emulate :func:`torch.nn.functional.fold` on devices that do not support it.
+
+    Parameters
+    ----------
+    x : torch.Tensor
+        Input tensor of shape ``(B, C * kernel_size**2, L)``.
+    output_size : tuple
+        The spatial size ``(H, W)`` of the folded output.
+    kernel_size : int
+        Size of each unfolding kernel.
+    padding : int, optional
+        Padding used during unfolding.
+    stride : int, optional
+        Stride used during unfolding.
+    dilation : int, optional
+        Dilation used during unfolding.
+
+    Returns
+    -------
+    torch.Tensor
+        Tensor of shape ``(B, C, H, W)`` placed on the same device as ``x``.
+    """
+
+    B, ck2, L = x.shape
+    C = ck2 // (kernel_size * kernel_size)
+    H, W = output_size
+
+    # Calculate the spatial size of the unfolded feature map
+    unfold_h = (H + 2 * padding - dilation * (kernel_size - 1) - 1) // stride + 1
+    unfold_w = (W + 2 * padding - dilation * (kernel_size - 1) - 1) // stride + 1
+    x = x.view(B, ck2, unfold_h, unfold_w)
+
+    weight = x.new_zeros(kernel_size * kernel_size, 1, kernel_size, kernel_size)
+    for idx in range(kernel_size * kernel_size):
+        r = idx // kernel_size
+        c = idx % kernel_size
+        weight[idx, 0, r, c] = 1.0
+    weight = weight.repeat(C, 1, 1, 1)
+
+    out = F.conv_transpose2d(x, weight, bias=None, stride=stride,
+                             padding=padding, dilation=dilation, groups=C)
+    return out
 
 
 

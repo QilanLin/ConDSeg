@@ -1,8 +1,10 @@
 import math
+import warnings
 import torch
 import torch.nn as nn
 from network.resnet import resnet50
 import torch.nn.functional as F
+from utils.utils import fold_mps
 
 
 class CBR(nn.Module):
@@ -254,6 +256,7 @@ class ContrastDrivenFeatureAggregation(nn.Module):
     def apply_attention(self, attn, v, B, H, W, C):
 
         x_weighted = (attn @ v).permute(0, 1, 4, 3, 2).reshape(
+
             B, self.dim * self.kernel_size * self.kernel_size, -1).contiguous()
         x_weighted = F.fold(x_weighted, output_size=(H, W), kernel_size=self.kernel_size,
                             padding=self.padding, stride=self.stride)
