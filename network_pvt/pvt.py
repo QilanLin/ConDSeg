@@ -93,7 +93,7 @@ class SAM(nn.Module):
         n, c, h, w = x.size()
         edge = torch.nn.functional.softmax(edge, dim=1)[:, 1, :, :].unsqueeze(1)
 
-        x_state_reshaped = self.conv_state(x).view(n, self.num_s, -1)
+        x_state_reshaped = self.conv_state(x).reshape(n, self.num_s, -1)
         x_proj = self.conv_proj(x)
         x_mask = x_proj * edge
 
@@ -112,7 +112,7 @@ class SAM(nn.Module):
         x_n_rel = self.gcn(x_n_state)
 
         x_state_reshaped = torch.matmul(x_n_rel, x_rproj_reshaped)
-        x_state = x_state_reshaped.view(n, self.num_s, *x.size()[2:])
+        x_state = x_state_reshaped.reshape(n, self.num_s, *x.size()[2:])
         out = x + (self.conv_extend(x_state))
 
         return out

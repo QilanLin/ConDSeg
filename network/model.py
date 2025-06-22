@@ -214,7 +214,7 @@ class ContrastDrivenFeatureAggregation(nn.Module):
 
         B, H, W, C = x.shape
 
-        v = self.v(x).permute(0, 3, 1, 2)
+        v = self.v(x).permute(0, 3, 1, 2).contiguous()
 
         v_unfolded = self.unfold(v).reshape(B, self.num_heads, self.head_dim,
                                             self.kernel_size * self.kernel_size,
@@ -223,7 +223,7 @@ class ContrastDrivenFeatureAggregation(nn.Module):
 
         x_weighted_fg = self.apply_attention(attn_fg, v_unfolded, B, H, W, C)
 
-        v_unfolded_bg = self.unfold(x_weighted_fg.permute(0, 3, 1, 2)).reshape(B, self.num_heads, self.head_dim,
+        v_unfolded_bg = self.unfold(x_weighted_fg.permute(0, 3, 1, 2).contiguous()).reshape(B, self.num_heads, self.head_dim,
                                                                                self.kernel_size * self.kernel_size,
                                                                                -1).permute(0, 1, 4, 3, 2)
         attn_bg = self.compute_attention(bg, B, H, W, C, 'bg')
@@ -241,7 +241,7 @@ class ContrastDrivenFeatureAggregation(nn.Module):
         attn_layer = self.attn_fg if feature_type == 'fg' else self.attn_bg
         h, w = math.ceil(H / self.stride), math.ceil(W / self.stride)
 
-        feature_map_pooled = self.pool(feature_map.permute(0, 3, 1, 2)).permute(0, 2, 3, 1)
+        feature_map_pooled = self.pool(feature_map.permute(0, 3, 1, 2).contiguous()).permute(0, 2, 3, 1)
 
         attn = attn_layer(feature_map_pooled).reshape(B, h * w, self.num_heads,
                                                       self.kernel_size * self.kernel_size,
