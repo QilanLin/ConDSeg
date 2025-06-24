@@ -1,11 +1,10 @@
-
 import os
 import random
 import numpy as np
 import torch
 from skimage.measure import label, regionprops, find_contours
 from sklearn.utils import shuffle
-from metrics import precision, recall, F2, dice_score, jac_score
+from .metrics import precision, recall, F2, dice_score, jac_score
 from sklearn.metrics import accuracy_score
 
 """ Seeding the randomness. """

@@ -105,7 +105,7 @@ def evaluate(model, save_path, test_x, test_y, size):
 if __name__ == "__main__":
     """ Seeding """
 
-    dataset_name = 'the name of the dataset'
+    dataset_name = 'Kvasir-SEG'
 
     seeding(42)
     size = (256, 256)
@@ -113,12 +113,12 @@ if __name__ == "__main__":
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = ConDSeg(256, 256)
     model = model.to(device)
-    checkpoint_path = "path to the model.pth"
+    checkpoint_path = "run_files/Kvasir-SEG/Kvasir-SEG_None_lr0.0001_20250623-183057/checkpoint.pth"
     model.load_state_dict(torch.load(checkpoint_path, map_location=device))
     model.eval()
 
     """ Test dataset """
-    path = "../data/{}/".format(dataset_name)
+    path = "data/{}/".format(dataset_name)
     (train_x, train_y), (test_x, test_y) = load_data(path)
 
     save_path = f"results/{dataset_name}/MyModel"
