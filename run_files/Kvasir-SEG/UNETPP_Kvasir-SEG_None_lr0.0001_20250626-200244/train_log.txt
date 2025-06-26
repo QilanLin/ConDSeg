@@ -271,3 +271,8 @@ Epoch: 59 | Epoch Time: 3m 28s
 	Train Loss: 1.3412 - mIoU: 0.8115 - F1: 0.8776 - Recall: 0.9016 - Precision: 0.8972
 	 Val. Loss: 1.3468 - mIoU: 0.7218 - F1: 0.8030 - Recall: 0.8698 - Precision: 0.8354
 
+Valid mIoU improved from 0.7610 to 0.7670. Saving checkpoint: run_files\Kvasir-SEG\UNETPP_Kvasir-SEG_None_lr0.0001_20250626-200244\checkpoint.pth
+Epoch: 60 | Epoch Time: 3m 40s
+	Train Loss: 1.3433 - mIoU: 0.7980 - F1: 0.8666 - Recall: 0.8898 - Precision: 0.8903
+	 Val. Loss: 1.3442 - mIoU: 0.7670 - F1: 0.8399 - Recall: 0.8396 - Precision: 0.9061
+
