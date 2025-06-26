@@ -1,7 +1,7 @@
 import math
 import torch
 import torch.nn as nn
-from resnet import resnet50
+from .resnet import resnet50
 import torch.nn.functional as F
 
 
