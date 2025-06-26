@@ -1,0 +1,1254 @@
+
+2025-06-26 04:01:51.781221
+Model: TGANet
+Image Size: 256
+Batch Size: 12
+LR: 0.0001
+Epochs: 300
+Early Stopping Patience: 100
+Seed: 0
+
+Dataset Size:
+Train: 879 - Valid: 119
+
+Optimizer: Adam
+Loss: BCE Dice Loss
+
+Number of parameters: 18.144387M
+
+Valid mIoU improved from 0.0000 to 0.3378. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 01 | Epoch Time: 2m 31s
+	Train Loss: 1.4649 - mIoU: 0.2686 - F1: 0.3849 - Recall: 0.4900 - Precision: 0.4313
+	 Val. Loss: 1.4312 - mIoU: 0.3378 - F1: 0.4701 - Recall: 0.5869 - Precision: 0.5121
+
+Valid mIoU improved from 0.3378 to 0.4194. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 02 | Epoch Time: 2m 46s
+	Train Loss: 1.4249 - mIoU: 0.3543 - F1: 0.4790 - Recall: 0.5312 - Precision: 0.5794
+	 Val. Loss: 1.4068 - mIoU: 0.4194 - F1: 0.5486 - Recall: 0.6157 - Precision: 0.6307
+
+Valid mIoU improved from 0.4194 to 0.4362. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 03 | Epoch Time: 2m 45s
+	Train Loss: 1.4144 - mIoU: 0.4010 - F1: 0.5242 - Recall: 0.5670 - Precision: 0.6403
+	 Val. Loss: 1.4078 - mIoU: 0.4362 - F1: 0.5684 - Recall: 0.7146 - Precision: 0.5976
+
+Epoch: 04 | Epoch Time: 2m 45s
+	Train Loss: 1.4051 - mIoU: 0.4161 - F1: 0.5314 - Recall: 0.5641 - Precision: 0.6676
+	 Val. Loss: 1.4038 - mIoU: 0.3752 - F1: 0.4875 - Recall: 0.4631 - Precision: 0.7358
+
+Epoch: 05 | Epoch Time: 2m 21s
+	Train Loss: 1.4038 - mIoU: 0.4324 - F1: 0.5464 - Recall: 0.5873 - Precision: 0.6651
+	 Val. Loss: 1.4016 - mIoU: 0.3689 - F1: 0.4647 - Recall: 0.4248 - Precision: 0.7502
+
+Valid mIoU improved from 0.4362 to 0.4379. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 06 | Epoch Time: 2m 20s
+	Train Loss: 1.3970 - mIoU: 0.4576 - F1: 0.5714 - Recall: 0.6142 - Precision: 0.6921
+	 Val. Loss: 1.4078 - mIoU: 0.4379 - F1: 0.5609 - Recall: 0.7351 - Precision: 0.5513
+
+Valid mIoU improved from 0.4379 to 0.4524. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 07 | Epoch Time: 2m 11s
+	Train Loss: 1.3962 - mIoU: 0.4683 - F1: 0.5789 - Recall: 0.6146 - Precision: 0.7055
+	 Val. Loss: 1.3906 - mIoU: 0.4524 - F1: 0.5584 - Recall: 0.5558 - Precision: 0.7815
+
+Epoch: 08 | Epoch Time: 2m 6s
+	Train Loss: 1.3842 - mIoU: 0.5164 - F1: 0.6258 - Recall: 0.6625 - Precision: 0.7223
+	 Val. Loss: 1.3896 - mIoU: 0.4396 - F1: 0.5367 - Recall: 0.5477 - Precision: 0.7568
+
+Epoch: 09 | Epoch Time: 2m 10s
+	Train Loss: 1.3866 - mIoU: 0.5078 - F1: 0.6175 - Recall: 0.6567 - Precision: 0.7213
+	 Val. Loss: 1.4296 - mIoU: 0.4371 - F1: 0.5710 - Recall: 0.8693 - Precision: 0.4810
+
+Valid mIoU improved from 0.4524 to 0.5195. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 10 | Epoch Time: 2m 18s
+	Train Loss: 1.3902 - mIoU: 0.4993 - F1: 0.6084 - Recall: 0.6499 - Precision: 0.7254
+	 Val. Loss: 1.3807 - mIoU: 0.5195 - F1: 0.6297 - Recall: 0.6775 - Precision: 0.7523
+
+Epoch: 11 | Epoch Time: 2m 34s
+	Train Loss: 1.3876 - mIoU: 0.5357 - F1: 0.6421 - Recall: 0.6875 - Precision: 0.7436
+	 Val. Loss: 1.3841 - mIoU: 0.5150 - F1: 0.6168 - Recall: 0.6018 - Precision: 0.8041
+
+Valid mIoU improved from 0.5195 to 0.5479. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 12 | Epoch Time: 2m 26s
+	Train Loss: 1.3756 - mIoU: 0.5807 - F1: 0.6868 - Recall: 0.7165 - Precision: 0.7777
+	 Val. Loss: 1.3784 - mIoU: 0.5479 - F1: 0.6578 - Recall: 0.7145 - Precision: 0.7207
+
+Epoch: 13 | Epoch Time: 2m 26s
+	Train Loss: 1.3803 - mIoU: 0.5876 - F1: 0.6929 - Recall: 0.7338 - Precision: 0.7693
+	 Val. Loss: 1.3790 - mIoU: 0.5290 - F1: 0.6354 - Recall: 0.6739 - Precision: 0.7627
+
+Epoch: 14 | Epoch Time: 2m 18s
+	Train Loss: 1.3730 - mIoU: 0.5980 - F1: 0.7009 - Recall: 0.7321 - Precision: 0.7811
+	 Val. Loss: 1.3810 - mIoU: 0.5311 - F1: 0.6354 - Recall: 0.6437 - Precision: 0.7475
+
+Valid mIoU improved from 0.5479 to 0.5765. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 15 | Epoch Time: 2m 17s
+	Train Loss: 1.3696 - mIoU: 0.6265 - F1: 0.7268 - Recall: 0.7642 - Precision: 0.7904
+	 Val. Loss: 1.3712 - mIoU: 0.5765 - F1: 0.6747 - Recall: 0.6926 - Precision: 0.7803
+
+Epoch: 16 | Epoch Time: 2m 32s
+	Train Loss: 1.3732 - mIoU: 0.6292 - F1: 0.7281 - Recall: 0.7693 - Precision: 0.7940
+	 Val. Loss: 1.3847 - mIoU: 0.5241 - F1: 0.6237 - Recall: 0.6091 - Precision: 0.8136
+
+Valid mIoU improved from 0.5765 to 0.6037. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 17 | Epoch Time: 2m 13s
+	Train Loss: 1.3660 - mIoU: 0.6408 - F1: 0.7387 - Recall: 0.7708 - Precision: 0.7991
+	 Val. Loss: 1.3655 - mIoU: 0.6037 - F1: 0.7099 - Recall: 0.7744 - Precision: 0.7591
+
+Epoch: 18 | Epoch Time: 2m 27s
+	Train Loss: 1.3663 - mIoU: 0.6490 - F1: 0.7484 - Recall: 0.7796 - Precision: 0.8070
+	 Val. Loss: 1.3867 - mIoU: 0.4980 - F1: 0.5870 - Recall: 0.5418 - Precision: 0.9073
+
+Valid mIoU improved from 0.6037 to 0.6343. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 19 | Epoch Time: 2m 35s
+	Train Loss: 1.3613 - mIoU: 0.6805 - F1: 0.7755 - Recall: 0.8034 - Precision: 0.8249
+	 Val. Loss: 1.3639 - mIoU: 0.6343 - F1: 0.7341 - Recall: 0.7866 - Precision: 0.7781
+
+Epoch: 20 | Epoch Time: 2m 12s
+	Train Loss: 1.3627 - mIoU: 0.6765 - F1: 0.7726 - Recall: 0.8110 - Precision: 0.8205
+	 Val. Loss: 1.3704 - mIoU: 0.5942 - F1: 0.6892 - Recall: 0.6787 - Precision: 0.8499
+
+Epoch: 21 | Epoch Time: 2m 10s
+	Train Loss: 1.3596 - mIoU: 0.6873 - F1: 0.7819 - Recall: 0.8129 - Precision: 0.8245
+	 Val. Loss: 1.3639 - mIoU: 0.6343 - F1: 0.7297 - Recall: 0.7824 - Precision: 0.7632
+
+Epoch: 22 | Epoch Time: 2m 15s
+	Train Loss: 1.3586 - mIoU: 0.6940 - F1: 0.7855 - Recall: 0.8175 - Precision: 0.8308
+	 Val. Loss: 1.3734 - mIoU: 0.5858 - F1: 0.6981 - Recall: 0.7775 - Precision: 0.7208
+
+Valid mIoU improved from 0.6343 to 0.6581. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 23 | Epoch Time: 2m 14s
+	Train Loss: 1.3582 - mIoU: 0.7028 - F1: 0.7927 - Recall: 0.8193 - Precision: 0.8412
+	 Val. Loss: 1.3605 - mIoU: 0.6581 - F1: 0.7612 - Recall: 0.8525 - Precision: 0.7658
+
+Epoch: 24 | Epoch Time: 2m 12s
+	Train Loss: 1.3581 - mIoU: 0.6953 - F1: 0.7877 - Recall: 0.8190 - Precision: 0.8348
+	 Val. Loss: 1.3685 - mIoU: 0.6325 - F1: 0.7313 - Recall: 0.7542 - Precision: 0.8386
+
+Epoch: 25 | Epoch Time: 2m 14s
+	Train Loss: 1.3585 - mIoU: 0.7065 - F1: 0.7975 - Recall: 0.8347 - Precision: 0.8306
+	 Val. Loss: 1.3637 - mIoU: 0.6359 - F1: 0.7285 - Recall: 0.7022 - Precision: 0.9028
+
+Valid mIoU improved from 0.6581 to 0.6866. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 26 | Epoch Time: 2m 22s
+	Train Loss: 1.3566 - mIoU: 0.7202 - F1: 0.8062 - Recall: 0.8336 - Precision: 0.8566
+	 Val. Loss: 1.3573 - mIoU: 0.6866 - F1: 0.7782 - Recall: 0.8322 - Precision: 0.8161
+
+Epoch: 27 | Epoch Time: 2m 22s
+	Train Loss: 1.3508 - mIoU: 0.7299 - F1: 0.8156 - Recall: 0.8448 - Precision: 0.8513
+	 Val. Loss: 1.3620 - mIoU: 0.6657 - F1: 0.7583 - Recall: 0.7705 - Precision: 0.8493
+
+Epoch: 28 | Epoch Time: 2m 11s
+	Train Loss: 1.3535 - mIoU: 0.7271 - F1: 0.8114 - Recall: 0.8372 - Precision: 0.8549
+	 Val. Loss: 1.3584 - mIoU: 0.6765 - F1: 0.7732 - Recall: 0.8457 - Precision: 0.7847
+
+Valid mIoU improved from 0.6866 to 0.7202. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 29 | Epoch Time: 2m 25s
+	Train Loss: 1.3515 - mIoU: 0.7503 - F1: 0.8330 - Recall: 0.8626 - Precision: 0.8553
+	 Val. Loss: 1.3538 - mIoU: 0.7202 - F1: 0.8115 - Recall: 0.8397 - Precision: 0.8525
+
+Epoch: 30 | Epoch Time: 2m 4s
+	Train Loss: 1.3516 - mIoU: 0.7379 - F1: 0.8210 - Recall: 0.8451 - Precision: 0.8600
+	 Val. Loss: 1.3554 - mIoU: 0.6729 - F1: 0.7656 - Recall: 0.7669 - Precision: 0.8561
+
+Epoch: 31 | Epoch Time: 2m 7s
+	Train Loss: 1.3512 - mIoU: 0.7367 - F1: 0.8210 - Recall: 0.8487 - Precision: 0.8521
+	 Val. Loss: 1.3538 - mIoU: 0.6906 - F1: 0.7864 - Recall: 0.8239 - Precision: 0.8163
+
+Epoch: 32 | Epoch Time: 2m 6s
+	Train Loss: 1.3537 - mIoU: 0.7391 - F1: 0.8223 - Recall: 0.8516 - Precision: 0.8547
+	 Val. Loss: 1.3560 - mIoU: 0.6878 - F1: 0.7829 - Recall: 0.8385 - Precision: 0.7975
+
+Epoch: 33 | Epoch Time: 2m 15s
+	Train Loss: 1.3521 - mIoU: 0.7495 - F1: 0.8307 - Recall: 0.8565 - Precision: 0.8669
+	 Val. Loss: 1.3530 - mIoU: 0.7007 - F1: 0.7880 - Recall: 0.8098 - Precision: 0.8517
+
+Epoch: 34 | Epoch Time: 2m 1s
+	Train Loss: 1.3481 - mIoU: 0.7573 - F1: 0.8384 - Recall: 0.8660 - Precision: 0.8647
+	 Val. Loss: 1.3544 - mIoU: 0.7134 - F1: 0.8044 - Recall: 0.8311 - Precision: 0.8466
+
+Epoch: 35 | Epoch Time: 2m 12s
+	Train Loss: 1.3479 - mIoU: 0.7590 - F1: 0.8384 - Recall: 0.8658 - Precision: 0.8655
+	 Val. Loss: 1.3530 - mIoU: 0.7066 - F1: 0.7960 - Recall: 0.8424 - Precision: 0.8278
+
+Epoch: 36 | Epoch Time: 2m 27s
+	Train Loss: 1.3471 - mIoU: 0.7661 - F1: 0.8424 - Recall: 0.8663 - Precision: 0.8732
+	 Val. Loss: 1.3505 - mIoU: 0.7202 - F1: 0.8035 - Recall: 0.8232 - Precision: 0.8737
+
+Valid mIoU improved from 0.7202 to 0.7276. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 37 | Epoch Time: 2m 12s
+	Train Loss: 1.3516 - mIoU: 0.7557 - F1: 0.8351 - Recall: 0.8630 - Precision: 0.8681
+	 Val. Loss: 1.3514 - mIoU: 0.7276 - F1: 0.8139 - Recall: 0.8458 - Precision: 0.8496
+
+Epoch: 38 | Epoch Time: 2m 7s
+	Train Loss: 1.3441 - mIoU: 0.7754 - F1: 0.8511 - Recall: 0.8730 - Precision: 0.8786
+	 Val. Loss: 1.3499 - mIoU: 0.7218 - F1: 0.8102 - Recall: 0.8403 - Precision: 0.8540
+
+Epoch: 39 | Epoch Time: 2m 4s
+	Train Loss: 1.3463 - mIoU: 0.7771 - F1: 0.8518 - Recall: 0.8740 - Precision: 0.8788
+	 Val. Loss: 1.3511 - mIoU: 0.7104 - F1: 0.7980 - Recall: 0.8035 - Precision: 0.8678
+
+Epoch: 40 | Epoch Time: 2m 6s
+	Train Loss: 1.3425 - mIoU: 0.7877 - F1: 0.8589 - Recall: 0.8758 - Precision: 0.8912
+	 Val. Loss: 1.3493 - mIoU: 0.7116 - F1: 0.8011 - Recall: 0.8627 - Precision: 0.8081
+
+Epoch: 41 | Epoch Time: 2m 17s
+	Train Loss: 1.3437 - mIoU: 0.7752 - F1: 0.8492 - Recall: 0.8657 - Precision: 0.8879
+	 Val. Loss: 1.3613 - mIoU: 0.6790 - F1: 0.7677 - Recall: 0.7413 - Precision: 0.8928
+
+Valid mIoU improved from 0.7276 to 0.7310. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 42 | Epoch Time: 2m 10s
+	Train Loss: 1.3433 - mIoU: 0.7806 - F1: 0.8552 - Recall: 0.8744 - Precision: 0.8869
+	 Val. Loss: 1.3478 - mIoU: 0.7310 - F1: 0.8174 - Recall: 0.8440 - Precision: 0.8589
+
+Epoch: 43 | Epoch Time: 2m 18s
+	Train Loss: 1.3461 - mIoU: 0.7740 - F1: 0.8481 - Recall: 0.8681 - Precision: 0.8819
+	 Val. Loss: 1.3514 - mIoU: 0.7242 - F1: 0.8005 - Recall: 0.8157 - Precision: 0.8568
+
+Valid mIoU improved from 0.7310 to 0.7377. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 44 | Epoch Time: 2m 18s
+	Train Loss: 1.3456 - mIoU: 0.7832 - F1: 0.8568 - Recall: 0.8773 - Precision: 0.8875
+	 Val. Loss: 1.3499 - mIoU: 0.7377 - F1: 0.8218 - Recall: 0.8626 - Precision: 0.8486
+
+Epoch: 45 | Epoch Time: 2m 21s
+	Train Loss: 1.3423 - mIoU: 0.7913 - F1: 0.8630 - Recall: 0.8826 - Precision: 0.8870
+	 Val. Loss: 1.3543 - mIoU: 0.7072 - F1: 0.7938 - Recall: 0.8400 - Precision: 0.8378
+
+Epoch: 46 | Epoch Time: 2m 32s
+	Train Loss: 1.3415 - mIoU: 0.7979 - F1: 0.8673 - Recall: 0.8894 - Precision: 0.8888
+	 Val. Loss: 1.3520 - mIoU: 0.7155 - F1: 0.8027 - Recall: 0.8675 - Precision: 0.8098
+
+Epoch: 47 | Epoch Time: 2m 22s
+	Train Loss: 1.3441 - mIoU: 0.7861 - F1: 0.8606 - Recall: 0.8841 - Precision: 0.8820
+	 Val. Loss: 1.3469 - mIoU: 0.7297 - F1: 0.8126 - Recall: 0.8250 - Precision: 0.8787
+
+Epoch: 48 | Epoch Time: 2m 15s
+	Train Loss: 1.3448 - mIoU: 0.7980 - F1: 0.8700 - Recall: 0.8925 - Precision: 0.8872
+	 Val. Loss: 1.3525 - mIoU: 0.7197 - F1: 0.8035 - Recall: 0.7849 - Precision: 0.9073
+
+Epoch: 49 | Epoch Time: 2m 20s
+	Train Loss: 1.3399 - mIoU: 0.8081 - F1: 0.8771 - Recall: 0.8948 - Precision: 0.9002
+	 Val. Loss: 1.3576 - mIoU: 0.6957 - F1: 0.7906 - Recall: 0.8775 - Precision: 0.7835
+
+Valid mIoU improved from 0.7377 to 0.7378. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 50 | Epoch Time: 2m 20s
+	Train Loss: 1.3447 - mIoU: 0.7964 - F1: 0.8673 - Recall: 0.8922 - Precision: 0.8799
+	 Val. Loss: 1.3470 - mIoU: 0.7378 - F1: 0.8238 - Recall: 0.8517 - Precision: 0.8581
+
+Valid mIoU improved from 0.7378 to 0.7406. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 51 | Epoch Time: 2m 15s
+	Train Loss: 1.3431 - mIoU: 0.7903 - F1: 0.8610 - Recall: 0.8751 - Precision: 0.8956
+	 Val. Loss: 1.3490 - mIoU: 0.7406 - F1: 0.8259 - Recall: 0.8323 - Precision: 0.8780
+
+Epoch: 52 | Epoch Time: 2m 26s
+	Train Loss: 1.3416 - mIoU: 0.8021 - F1: 0.8703 - Recall: 0.8864 - Precision: 0.8925
+	 Val. Loss: 1.3452 - mIoU: 0.7359 - F1: 0.8190 - Recall: 0.8478 - Precision: 0.8600
+
+Epoch: 53 | Epoch Time: 2m 19s
+	Train Loss: 1.3421 - mIoU: 0.8021 - F1: 0.8684 - Recall: 0.8880 - Precision: 0.8953
+	 Val. Loss: 1.3433 - mIoU: 0.7376 - F1: 0.8235 - Recall: 0.8819 - Precision: 0.8266
+
+Valid mIoU improved from 0.7406 to 0.7431. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 54 | Epoch Time: 2m 16s
+	Train Loss: 1.3408 - mIoU: 0.7988 - F1: 0.8680 - Recall: 0.8910 - Precision: 0.8838
+	 Val. Loss: 1.3463 - mIoU: 0.7431 - F1: 0.8274 - Recall: 0.8752 - Precision: 0.8425
+
+Epoch: 55 | Epoch Time: 2m 19s
+	Train Loss: 1.3421 - mIoU: 0.8060 - F1: 0.8743 - Recall: 0.8979 - Precision: 0.8879
+	 Val. Loss: 1.3523 - mIoU: 0.7228 - F1: 0.7995 - Recall: 0.7969 - Precision: 0.8899
+
+Epoch: 56 | Epoch Time: 2m 17s
+	Train Loss: 1.3389 - mIoU: 0.8082 - F1: 0.8749 - Recall: 0.8922 - Precision: 0.8968
+	 Val. Loss: 1.3556 - mIoU: 0.7162 - F1: 0.7972 - Recall: 0.7642 - Precision: 0.9262
+
+Epoch: 57 | Epoch Time: 2m 17s
+	Train Loss: 1.3414 - mIoU: 0.8092 - F1: 0.8769 - Recall: 0.8974 - Precision: 0.8931
+	 Val. Loss: 1.3540 - mIoU: 0.7149 - F1: 0.7962 - Recall: 0.7787 - Precision: 0.9050
+
+Epoch: 58 | Epoch Time: 2m 20s
+	Train Loss: 1.3394 - mIoU: 0.8190 - F1: 0.8832 - Recall: 0.8979 - Precision: 0.8995
+	 Val. Loss: 1.3550 - mIoU: 0.7144 - F1: 0.7942 - Recall: 0.7795 - Precision: 0.9049
+
+Epoch: 59 | Epoch Time: 2m 14s
+	Train Loss: 1.3403 - mIoU: 0.8175 - F1: 0.8822 - Recall: 0.9014 - Precision: 0.8977
+	 Val. Loss: 1.3495 - mIoU: 0.7322 - F1: 0.8154 - Recall: 0.8807 - Precision: 0.8208
+
+Epoch: 60 | Epoch Time: 2m 18s
+	Train Loss: 1.3378 - mIoU: 0.8217 - F1: 0.8859 - Recall: 0.9005 - Precision: 0.9042
+	 Val. Loss: 1.3625 - mIoU: 0.6738 - F1: 0.7598 - Recall: 0.7310 - Precision: 0.9190
+
+Epoch: 61 | Epoch Time: 2m 13s
+	Train Loss: 1.3396 - mIoU: 0.8197 - F1: 0.8842 - Recall: 0.8998 - Precision: 0.9066
+	 Val. Loss: 1.3489 - mIoU: 0.7315 - F1: 0.8171 - Recall: 0.8887 - Precision: 0.8089
+
+Epoch: 62 | Epoch Time: 2m 21s
+	Train Loss: 1.3354 - mIoU: 0.8238 - F1: 0.8874 - Recall: 0.9044 - Precision: 0.8983
+	 Val. Loss: 1.3468 - mIoU: 0.7397 - F1: 0.8257 - Recall: 0.8641 - Precision: 0.8489
+
+Epoch: 63 | Epoch Time: 2m 21s
+	Train Loss: 1.3369 - mIoU: 0.8253 - F1: 0.8878 - Recall: 0.9090 - Precision: 0.9017
+	 Val. Loss: 1.3493 - mIoU: 0.7378 - F1: 0.8183 - Recall: 0.8799 - Precision: 0.8346
+
+Valid mIoU improved from 0.7431 to 0.7474. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 64 | Epoch Time: 2m 16s
+	Train Loss: 1.3355 - mIoU: 0.8284 - F1: 0.8908 - Recall: 0.9050 - Precision: 0.9077
+	 Val. Loss: 1.3441 - mIoU: 0.7474 - F1: 0.8287 - Recall: 0.8726 - Precision: 0.8417
+
+Epoch: 65 | Epoch Time: 2m 32s
+	Train Loss: 1.3355 - mIoU: 0.8314 - F1: 0.8935 - Recall: 0.9073 - Precision: 0.9087
+	 Val. Loss: 1.3504 - mIoU: 0.7272 - F1: 0.8064 - Recall: 0.8853 - Precision: 0.8151
+
+Valid mIoU improved from 0.7474 to 0.7587. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 66 | Epoch Time: 2m 23s
+	Train Loss: 1.3341 - mIoU: 0.8389 - F1: 0.8995 - Recall: 0.9155 - Precision: 0.9084
+	 Val. Loss: 1.3439 - mIoU: 0.7587 - F1: 0.8393 - Recall: 0.8422 - Precision: 0.8956
+
+Epoch: 67 | Epoch Time: 2m 19s
+	Train Loss: 1.3359 - mIoU: 0.8366 - F1: 0.8972 - Recall: 0.9122 - Precision: 0.9109
+	 Val. Loss: 1.3433 - mIoU: 0.7539 - F1: 0.8384 - Recall: 0.8803 - Precision: 0.8402
+
+Valid mIoU improved from 0.7587 to 0.7642. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 68 | Epoch Time: 2m 20s
+	Train Loss: 1.3345 - mIoU: 0.8294 - F1: 0.8932 - Recall: 0.9081 - Precision: 0.9044
+	 Val. Loss: 1.3438 - mIoU: 0.7642 - F1: 0.8404 - Recall: 0.8634 - Precision: 0.8615
+
+Epoch: 69 | Epoch Time: 2m 21s
+	Train Loss: 1.3367 - mIoU: 0.8305 - F1: 0.8923 - Recall: 0.9081 - Precision: 0.9083
+	 Val. Loss: 1.3471 - mIoU: 0.7470 - F1: 0.8249 - Recall: 0.8509 - Precision: 0.8614
+
+Epoch: 70 | Epoch Time: 2m 17s
+	Train Loss: 1.3407 - mIoU: 0.8163 - F1: 0.8827 - Recall: 0.8983 - Precision: 0.9040
+	 Val. Loss: 1.3455 - mIoU: 0.7468 - F1: 0.8276 - Recall: 0.8926 - Precision: 0.8177
+
+Epoch: 71 | Epoch Time: 2m 21s
+	Train Loss: 1.3364 - mIoU: 0.8313 - F1: 0.8926 - Recall: 0.9115 - Precision: 0.9011
+	 Val. Loss: 1.3418 - mIoU: 0.7620 - F1: 0.8410 - Recall: 0.8934 - Precision: 0.8427
+
+Epoch: 72 | Epoch Time: 2m 15s
+	Train Loss: 1.3314 - mIoU: 0.8463 - F1: 0.9034 - Recall: 0.9144 - Precision: 0.9193
+	 Val. Loss: 1.3477 - mIoU: 0.7493 - F1: 0.8260 - Recall: 0.8492 - Precision: 0.8674
+
+Epoch: 73 | Epoch Time: 2m 18s
+	Train Loss: 1.3342 - mIoU: 0.8366 - F1: 0.8978 - Recall: 0.9167 - Precision: 0.9076
+	 Val. Loss: 1.3437 - mIoU: 0.7564 - F1: 0.8334 - Recall: 0.8742 - Precision: 0.8537
+
+Epoch: 74 | Epoch Time: 2m 15s
+	Train Loss: 1.3353 - mIoU: 0.8418 - F1: 0.9001 - Recall: 0.9144 - Precision: 0.9110
+	 Val. Loss: 1.3484 - mIoU: 0.7325 - F1: 0.8152 - Recall: 0.8596 - Precision: 0.8282
+
+Valid mIoU improved from 0.7642 to 0.7752. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 75 | Epoch Time: 2m 19s
+	Train Loss: 1.3347 - mIoU: 0.8385 - F1: 0.8977 - Recall: 0.9074 - Precision: 0.9146
+	 Val. Loss: 1.3387 - mIoU: 0.7752 - F1: 0.8537 - Recall: 0.8964 - Precision: 0.8588
+
+Epoch: 76 | Epoch Time: 2m 11s
+	Train Loss: 1.3345 - mIoU: 0.8414 - F1: 0.8995 - Recall: 0.9107 - Precision: 0.9161
+	 Val. Loss: 1.3526 - mIoU: 0.7257 - F1: 0.8051 - Recall: 0.7826 - Precision: 0.9120
+
+Epoch: 77 | Epoch Time: 2m 15s
+	Train Loss: 1.3361 - mIoU: 0.8373 - F1: 0.8958 - Recall: 0.9112 - Precision: 0.9132
+	 Val. Loss: 1.3450 - mIoU: 0.7617 - F1: 0.8435 - Recall: 0.8792 - Precision: 0.8592
+
+Epoch: 78 | Epoch Time: 2m 24s
+	Train Loss: 1.3328 - mIoU: 0.8431 - F1: 0.9024 - Recall: 0.9131 - Precision: 0.9169
+	 Val. Loss: 1.3427 - mIoU: 0.7675 - F1: 0.8426 - Recall: 0.8613 - Precision: 0.8780
+
+Valid mIoU improved from 0.7752 to 0.7762. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 79 | Epoch Time: 2m 38s
+	Train Loss: 1.3340 - mIoU: 0.8405 - F1: 0.8999 - Recall: 0.9156 - Precision: 0.9131
+	 Val. Loss: 1.3395 - mIoU: 0.7762 - F1: 0.8502 - Recall: 0.8907 - Precision: 0.8575
+
+Epoch: 80 | Epoch Time: 2m 13s
+	Train Loss: 1.3322 - mIoU: 0.8494 - F1: 0.9067 - Recall: 0.9168 - Precision: 0.9209
+	 Val. Loss: 1.3431 - mIoU: 0.7497 - F1: 0.8304 - Recall: 0.9057 - Precision: 0.8238
+
+Epoch: 81 | Epoch Time: 2m 23s
+	Train Loss: 1.3335 - mIoU: 0.8556 - F1: 0.9101 - Recall: 0.9229 - Precision: 0.9201
+	 Val. Loss: 1.3442 - mIoU: 0.7658 - F1: 0.8427 - Recall: 0.8977 - Precision: 0.8480
+
+Epoch: 82 | Epoch Time: 2m 16s
+	Train Loss: 1.3336 - mIoU: 0.8518 - F1: 0.9093 - Recall: 0.9228 - Precision: 0.9160
+	 Val. Loss: 1.3431 - mIoU: 0.7670 - F1: 0.8393 - Recall: 0.8324 - Precision: 0.9042
+
+Epoch: 83 | Epoch Time: 2m 17s
+	Train Loss: 1.3347 - mIoU: 0.8463 - F1: 0.9054 - Recall: 0.9203 - Precision: 0.9148
+	 Val. Loss: 1.3413 - mIoU: 0.7678 - F1: 0.8459 - Recall: 0.9063 - Precision: 0.8427
+
+Valid mIoU improved from 0.7762 to 0.7769. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 84 | Epoch Time: 2m 17s
+	Train Loss: 1.3334 - mIoU: 0.8546 - F1: 0.9113 - Recall: 0.9256 - Precision: 0.9184
+	 Val. Loss: 1.3397 - mIoU: 0.7769 - F1: 0.8536 - Recall: 0.8866 - Precision: 0.8675
+
+Epoch: 85 | Epoch Time: 2m 16s
+	Train Loss: 1.3314 - mIoU: 0.8550 - F1: 0.9099 - Recall: 0.9233 - Precision: 0.9215
+	 Val. Loss: 1.3451 - mIoU: 0.7588 - F1: 0.8358 - Recall: 0.8304 - Precision: 0.9079
+
+Valid mIoU improved from 0.7769 to 0.7784. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 86 | Epoch Time: 2m 14s
+	Train Loss: 1.3327 - mIoU: 0.8541 - F1: 0.9102 - Recall: 0.9195 - Precision: 0.9256
+	 Val. Loss: 1.3381 - mIoU: 0.7784 - F1: 0.8540 - Recall: 0.8797 - Precision: 0.8867
+
+Epoch: 87 | Epoch Time: 2m 15s
+	Train Loss: 1.3311 - mIoU: 0.8583 - F1: 0.9139 - Recall: 0.9255 - Precision: 0.9219
+	 Val. Loss: 1.3439 - mIoU: 0.7632 - F1: 0.8378 - Recall: 0.8349 - Precision: 0.9188
+
+Epoch: 88 | Epoch Time: 2m 33s
+	Train Loss: 1.3315 - mIoU: 0.8635 - F1: 0.9166 - Recall: 0.9270 - Precision: 0.9262
+	 Val. Loss: 1.3437 - mIoU: 0.7729 - F1: 0.8498 - Recall: 0.8713 - Precision: 0.8856
+
+Epoch: 89 | Epoch Time: 2m 24s
+	Train Loss: 1.3313 - mIoU: 0.8680 - F1: 0.9205 - Recall: 0.9313 - Precision: 0.9283
+	 Val. Loss: 1.3429 - mIoU: 0.7692 - F1: 0.8485 - Recall: 0.8791 - Precision: 0.8685
+
+Epoch: 90 | Epoch Time: 2m 25s
+	Train Loss: 1.3321 - mIoU: 0.8591 - F1: 0.9136 - Recall: 0.9250 - Precision: 0.9242
+	 Val. Loss: 1.3412 - mIoU: 0.7725 - F1: 0.8473 - Recall: 0.8986 - Precision: 0.8512
+
+Epoch: 91 | Epoch Time: 2m 21s
+	Train Loss: 1.3286 - mIoU: 0.8636 - F1: 0.9163 - Recall: 0.9285 - Precision: 0.9261
+	 Val. Loss: 1.3411 - mIoU: 0.7734 - F1: 0.8505 - Recall: 0.8881 - Precision: 0.8641
+
+Epoch: 92 | Epoch Time: 2m 20s
+	Train Loss: 1.3326 - mIoU: 0.8606 - F1: 0.9155 - Recall: 0.9294 - Precision: 0.9199
+	 Val. Loss: 1.3445 - mIoU: 0.7592 - F1: 0.8375 - Recall: 0.8685 - Precision: 0.8606
+
+Epoch: 93 | Epoch Time: 2m 17s
+	Train Loss: 1.3350 - mIoU: 0.8501 - F1: 0.9061 - Recall: 0.9209 - Precision: 0.9151
+	 Val. Loss: 1.3427 - mIoU: 0.7703 - F1: 0.8467 - Recall: 0.8700 - Precision: 0.8807
+
+Epoch: 94 | Epoch Time: 2m 19s
+	Train Loss: 1.3317 - mIoU: 0.8572 - F1: 0.9122 - Recall: 0.9235 - Precision: 0.9221
+	 Val. Loss: 1.3432 - mIoU: 0.7660 - F1: 0.8417 - Recall: 0.8828 - Precision: 0.8636
+
+Valid mIoU improved from 0.7784 to 0.7813. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 95 | Epoch Time: 2m 24s
+	Train Loss: 1.3333 - mIoU: 0.8618 - F1: 0.9159 - Recall: 0.9269 - Precision: 0.9228
+	 Val. Loss: 1.3398 - mIoU: 0.7813 - F1: 0.8559 - Recall: 0.8741 - Precision: 0.8814
+
+Epoch: 96 | Epoch Time: 2m 28s
+	Train Loss: 1.3321 - mIoU: 0.8644 - F1: 0.9174 - Recall: 0.9296 - Precision: 0.9258
+	 Val. Loss: 1.3482 - mIoU: 0.7552 - F1: 0.8372 - Recall: 0.8347 - Precision: 0.9022
+
+Epoch: 97 | Epoch Time: 2m 20s
+	Train Loss: 1.3311 - mIoU: 0.8609 - F1: 0.9143 - Recall: 0.9240 - Precision: 0.9294
+	 Val. Loss: 1.3460 - mIoU: 0.7564 - F1: 0.8377 - Recall: 0.8758 - Precision: 0.8583
+
+Epoch: 98 | Epoch Time: 2m 34s
+	Train Loss: 1.3291 - mIoU: 0.8638 - F1: 0.9167 - Recall: 0.9296 - Precision: 0.9250
+	 Val. Loss: 1.3452 - mIoU: 0.7649 - F1: 0.8447 - Recall: 0.8738 - Precision: 0.8674
+
+Epoch: 99 | Epoch Time: 2m 21s
+	Train Loss: 1.3332 - mIoU: 0.8511 - F1: 0.9072 - Recall: 0.9196 - Precision: 0.9153
+	 Val. Loss: 1.3464 - mIoU: 0.7401 - F1: 0.8184 - Recall: 0.8619 - Precision: 0.8533
+
+Epoch: 100 | Epoch Time: 2m 35s
+	Train Loss: 1.3319 - mIoU: 0.8521 - F1: 0.9091 - Recall: 0.9276 - Precision: 0.9141
+	 Val. Loss: 1.3417 - mIoU: 0.7712 - F1: 0.8509 - Recall: 0.8894 - Precision: 0.8662
+
+Epoch: 101 | Epoch Time: 2m 39s
+	Train Loss: 1.3292 - mIoU: 0.8621 - F1: 0.9153 - Recall: 0.9261 - Precision: 0.9245
+	 Val. Loss: 1.3428 - mIoU: 0.7693 - F1: 0.8443 - Recall: 0.8621 - Precision: 0.8839
+
+Epoch: 102 | Epoch Time: 2m 29s
+	Train Loss: 1.3342 - mIoU: 0.8535 - F1: 0.9109 - Recall: 0.9290 - Precision: 0.9146
+	 Val. Loss: 1.3455 - mIoU: 0.7630 - F1: 0.8379 - Recall: 0.8601 - Precision: 0.8820
+
+Epoch: 103 | Epoch Time: 2m 26s
+	Train Loss: 1.3313 - mIoU: 0.8655 - F1: 0.9186 - Recall: 0.9310 - Precision: 0.9258
+	 Val. Loss: 1.3413 - mIoU: 0.7623 - F1: 0.8397 - Recall: 0.9032 - Precision: 0.8386
+
+Epoch: 104 | Epoch Time: 2m 38s
+	Train Loss: 1.3303 - mIoU: 0.8591 - F1: 0.9135 - Recall: 0.9263 - Precision: 0.9240
+	 Val. Loss: 1.3454 - mIoU: 0.7638 - F1: 0.8411 - Recall: 0.8439 - Precision: 0.8960
+
+Epoch: 105 | Epoch Time: 2m 25s
+	Train Loss: 1.3301 - mIoU: 0.8665 - F1: 0.9178 - Recall: 0.9308 - Precision: 0.9253
+	 Val. Loss: 1.3537 - mIoU: 0.7249 - F1: 0.8120 - Recall: 0.8855 - Precision: 0.8163
+
+Epoch: 106 | Epoch Time: 2m 37s
+	Train Loss: 1.3303 - mIoU: 0.8732 - F1: 0.9242 - Recall: 0.9382 - Precision: 0.9283
+	 Val. Loss: 1.3431 - mIoU: 0.7761 - F1: 0.8526 - Recall: 0.8503 - Precision: 0.9088
+
+Epoch: 107 | Epoch Time: 2m 26s
+	Train Loss: 1.3321 - mIoU: 0.8680 - F1: 0.9207 - Recall: 0.9342 - Precision: 0.9271
+	 Val. Loss: 1.3436 - mIoU: 0.7665 - F1: 0.8446 - Recall: 0.8606 - Precision: 0.8840
+
+Epoch: 108 | Epoch Time: 2m 50s
+	Train Loss: 1.3329 - mIoU: 0.8650 - F1: 0.9188 - Recall: 0.9307 - Precision: 0.9260
+	 Val. Loss: 1.3404 - mIoU: 0.7766 - F1: 0.8531 - Recall: 0.8915 - Precision: 0.8657
+
+Epoch: 109 | Epoch Time: 2m 45s
+	Train Loss: 1.3307 - mIoU: 0.8691 - F1: 0.9207 - Recall: 0.9327 - Precision: 0.9271
+	 Val. Loss: 1.3425 - mIoU: 0.7595 - F1: 0.8413 - Recall: 0.9059 - Precision: 0.8317
+
+Epoch: 110 | Epoch Time: 2m 31s
+	Train Loss: 1.3267 - mIoU: 0.8778 - F1: 0.9266 - Recall: 0.9343 - Precision: 0.9362
+	 Val. Loss: 1.3414 - mIoU: 0.7679 - F1: 0.8457 - Recall: 0.9075 - Precision: 0.8421
+
+Epoch: 111 | Epoch Time: 2m 29s
+	Train Loss: 1.3299 - mIoU: 0.8738 - F1: 0.9234 - Recall: 0.9360 - Precision: 0.9292
+	 Val. Loss: 1.3413 - mIoU: 0.7674 - F1: 0.8387 - Recall: 0.8616 - Precision: 0.8854
+
+Epoch: 112 | Epoch Time: 2m 35s
+	Train Loss: 1.3283 - mIoU: 0.8708 - F1: 0.9228 - Recall: 0.9342 - Precision: 0.9265
+	 Val. Loss: 1.3436 - mIoU: 0.7585 - F1: 0.8325 - Recall: 0.8398 - Precision: 0.8816
+
+Epoch: 113 | Epoch Time: 2m 47s
+	Train Loss: 1.3312 - mIoU: 0.8698 - F1: 0.9207 - Recall: 0.9328 - Precision: 0.9266
+	 Val. Loss: 1.3470 - mIoU: 0.7530 - F1: 0.8281 - Recall: 0.8563 - Precision: 0.8698
+
+Epoch: 114 | Epoch Time: 2m 36s
+	Train Loss: 1.3284 - mIoU: 0.8771 - F1: 0.9277 - Recall: 0.9368 - Precision: 0.9326
+	 Val. Loss: 1.3409 - mIoU: 0.7776 - F1: 0.8498 - Recall: 0.8585 - Precision: 0.8968
+
+Epoch: 115 | Epoch Time: 2m 40s
+	Train Loss: 1.3309 - mIoU: 0.8709 - F1: 0.9221 - Recall: 0.9313 - Precision: 0.9295
+	 Val. Loss: 1.3403 - mIoU: 0.7695 - F1: 0.8445 - Recall: 0.8984 - Precision: 0.8470
+
+Epoch: 116 | Epoch Time: 3m 5s
+	Train Loss: 1.3278 - mIoU: 0.8750 - F1: 0.9251 - Recall: 0.9387 - Precision: 0.9291
+	 Val. Loss: 1.3483 - mIoU: 0.7532 - F1: 0.8322 - Recall: 0.8845 - Precision: 0.8433
+
+Epoch: 117 | Epoch Time: 2m 31s
+	Train Loss: 1.3306 - mIoU: 0.8692 - F1: 0.9217 - Recall: 0.9351 - Precision: 0.9268
+	 Val. Loss: 1.3502 - mIoU: 0.7510 - F1: 0.8262 - Recall: 0.8362 - Precision: 0.8888
+
+Epoch: 118 | Epoch Time: 2m 48s
+	Train Loss: 1.3312 - mIoU: 0.8818 - F1: 0.9288 - Recall: 0.9402 - Precision: 0.9359
+	 Val. Loss: 1.3406 - mIoU: 0.7773 - F1: 0.8468 - Recall: 0.8929 - Precision: 0.8663
+
+Epoch: 119 | Epoch Time: 2m 43s
+	Train Loss: 1.3268 - mIoU: 0.8911 - F1: 0.9356 - Recall: 0.9427 - Precision: 0.9436
+	 Val. Loss: 1.3414 - mIoU: 0.7808 - F1: 0.8505 - Recall: 0.8769 - Precision: 0.8754
+
+Valid mIoU improved from 0.7813 to 0.7860. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 120 | Epoch Time: 2m 37s
+	Train Loss: 1.3260 - mIoU: 0.8967 - F1: 0.9399 - Recall: 0.9482 - Precision: 0.9431
+	 Val. Loss: 1.3392 - mIoU: 0.7860 - F1: 0.8562 - Recall: 0.8883 - Precision: 0.8760
+
+Valid mIoU improved from 0.7860 to 0.7864. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 121 | Epoch Time: 2m 32s
+	Train Loss: 1.3256 - mIoU: 0.8963 - F1: 0.9399 - Recall: 0.9466 - Precision: 0.9443
+	 Val. Loss: 1.3399 - mIoU: 0.7864 - F1: 0.8559 - Recall: 0.8783 - Precision: 0.8909
+
+Valid mIoU improved from 0.7864 to 0.7885. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 122 | Epoch Time: 2m 36s
+	Train Loss: 1.3243 - mIoU: 0.9019 - F1: 0.9440 - Recall: 0.9521 - Precision: 0.9452
+	 Val. Loss: 1.3386 - mIoU: 0.7885 - F1: 0.8588 - Recall: 0.8939 - Precision: 0.8740
+
+Valid mIoU improved from 0.7885 to 0.7917. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 123 | Epoch Time: 2m 48s
+	Train Loss: 1.3230 - mIoU: 0.9002 - F1: 0.9424 - Recall: 0.9512 - Precision: 0.9440
+	 Val. Loss: 1.3386 - mIoU: 0.7917 - F1: 0.8612 - Recall: 0.8854 - Precision: 0.8930
+
+Epoch: 124 | Epoch Time: 2m 35s
+	Train Loss: 1.3241 - mIoU: 0.9006 - F1: 0.9425 - Recall: 0.9481 - Precision: 0.9468
+	 Val. Loss: 1.3389 - mIoU: 0.7883 - F1: 0.8575 - Recall: 0.8859 - Precision: 0.8791
+
+Epoch: 125 | Epoch Time: 2m 32s
+	Train Loss: 1.3245 - mIoU: 0.9037 - F1: 0.9443 - Recall: 0.9513 - Precision: 0.9482
+	 Val. Loss: 1.3383 - mIoU: 0.7900 - F1: 0.8604 - Recall: 0.8892 - Precision: 0.8882
+
+Epoch: 126 | Epoch Time: 2m 39s
+	Train Loss: 1.3225 - mIoU: 0.9057 - F1: 0.9467 - Recall: 0.9547 - Precision: 0.9474
+	 Val. Loss: 1.3389 - mIoU: 0.7868 - F1: 0.8570 - Recall: 0.8809 - Precision: 0.8888
+
+Epoch: 127 | Epoch Time: 2m 40s
+	Train Loss: 1.3250 - mIoU: 0.9051 - F1: 0.9458 - Recall: 0.9534 - Precision: 0.9474
+	 Val. Loss: 1.3392 - mIoU: 0.7846 - F1: 0.8565 - Recall: 0.8998 - Precision: 0.8654
+
+Epoch: 128 | Epoch Time: 2m 48s
+	Train Loss: 1.3263 - mIoU: 0.9055 - F1: 0.9464 - Recall: 0.9532 - Precision: 0.9485
+	 Val. Loss: 1.3389 - mIoU: 0.7862 - F1: 0.8571 - Recall: 0.9029 - Precision: 0.8641
+
+Epoch: 129 | Epoch Time: 2m 41s
+	Train Loss: 1.3232 - mIoU: 0.9048 - F1: 0.9454 - Recall: 0.9543 - Precision: 0.9464
+	 Val. Loss: 1.3386 - mIoU: 0.7914 - F1: 0.8616 - Recall: 0.8892 - Precision: 0.8904
+
+Epoch: 130 | Epoch Time: 2m 45s
+	Train Loss: 1.3252 - mIoU: 0.9064 - F1: 0.9462 - Recall: 0.9555 - Precision: 0.9464
+	 Val. Loss: 1.3381 - mIoU: 0.7856 - F1: 0.8570 - Recall: 0.8909 - Precision: 0.8820
+
+Epoch: 131 | Epoch Time: 2m 34s
+	Train Loss: 1.3253 - mIoU: 0.9073 - F1: 0.9471 - Recall: 0.9517 - Precision: 0.9512
+	 Val. Loss: 1.3390 - mIoU: 0.7861 - F1: 0.8572 - Recall: 0.8900 - Precision: 0.8844
+
+Epoch: 132 | Epoch Time: 2m 46s
+	Train Loss: 1.3233 - mIoU: 0.9063 - F1: 0.9464 - Recall: 0.9535 - Precision: 0.9474
+	 Val. Loss: 1.3396 - mIoU: 0.7841 - F1: 0.8559 - Recall: 0.8828 - Precision: 0.8868
+
+Epoch: 133 | Epoch Time: 2m 53s
+	Train Loss: 1.3232 - mIoU: 0.9066 - F1: 0.9456 - Recall: 0.9506 - Precision: 0.9519
+	 Val. Loss: 1.3382 - mIoU: 0.7874 - F1: 0.8573 - Recall: 0.8897 - Precision: 0.8820
+
+Epoch: 134 | Epoch Time: 2m 38s
+	Train Loss: 1.3264 - mIoU: 0.9097 - F1: 0.9484 - Recall: 0.9533 - Precision: 0.9502
+	 Val. Loss: 1.3388 - mIoU: 0.7850 - F1: 0.8554 - Recall: 0.8799 - Precision: 0.8892
+
+Epoch: 135 | Epoch Time: 2m 43s
+	Train Loss: 1.3212 - mIoU: 0.9061 - F1: 0.9465 - Recall: 0.9515 - Precision: 0.9502
+	 Val. Loss: 1.3403 - mIoU: 0.7834 - F1: 0.8550 - Recall: 0.8764 - Precision: 0.8918
+
+Epoch: 136 | Epoch Time: 2m 37s
+	Train Loss: 1.3247 - mIoU: 0.9101 - F1: 0.9493 - Recall: 0.9576 - Precision: 0.9485
+	 Val. Loss: 1.3399 - mIoU: 0.7832 - F1: 0.8562 - Recall: 0.8814 - Precision: 0.8885
+
+Epoch: 137 | Epoch Time: 2m 35s
+	Train Loss: 1.3242 - mIoU: 0.9128 - F1: 0.9511 - Recall: 0.9566 - Precision: 0.9521
+	 Val. Loss: 1.3389 - mIoU: 0.7857 - F1: 0.8579 - Recall: 0.8844 - Precision: 0.8886
+
+Epoch: 138 | Epoch Time: 2m 33s
+	Train Loss: 1.3250 - mIoU: 0.9125 - F1: 0.9506 - Recall: 0.9567 - Precision: 0.9521
+	 Val. Loss: 1.3386 - mIoU: 0.7877 - F1: 0.8598 - Recall: 0.8962 - Precision: 0.8809
+
+Epoch: 139 | Epoch Time: 2m 46s
+	Train Loss: 1.3219 - mIoU: 0.9099 - F1: 0.9486 - Recall: 0.9560 - Precision: 0.9505
+	 Val. Loss: 1.3399 - mIoU: 0.7869 - F1: 0.8582 - Recall: 0.8729 - Precision: 0.8996
+
+Epoch: 140 | Epoch Time: 3m 0s
+	Train Loss: 1.3263 - mIoU: 0.9109 - F1: 0.9500 - Recall: 0.9564 - Precision: 0.9510
+	 Val. Loss: 1.3389 - mIoU: 0.7826 - F1: 0.8554 - Recall: 0.9003 - Precision: 0.8707
+
+Epoch: 141 | Epoch Time: 2m 37s
+	Train Loss: 1.3269 - mIoU: 0.9098 - F1: 0.9487 - Recall: 0.9552 - Precision: 0.9503
+	 Val. Loss: 1.3387 - mIoU: 0.7818 - F1: 0.8536 - Recall: 0.8877 - Precision: 0.8773
+
+Epoch: 142 | Epoch Time: 2m 48s
+	Train Loss: 1.3231 - mIoU: 0.9090 - F1: 0.9477 - Recall: 0.9544 - Precision: 0.9506
+	 Val. Loss: 1.3380 - mIoU: 0.7911 - F1: 0.8607 - Recall: 0.8788 - Precision: 0.8934
+
+Epoch: 143 | Epoch Time: 2m 47s
+	Train Loss: 1.3226 - mIoU: 0.9106 - F1: 0.9490 - Recall: 0.9559 - Precision: 0.9513
+	 Val. Loss: 1.3390 - mIoU: 0.7810 - F1: 0.8532 - Recall: 0.8915 - Precision: 0.8733
+
+Epoch: 144 | Epoch Time: 2m 50s
+	Train Loss: 1.3224 - mIoU: 0.9102 - F1: 0.9488 - Recall: 0.9553 - Precision: 0.9507
+	 Val. Loss: 1.3371 - mIoU: 0.7896 - F1: 0.8592 - Recall: 0.8871 - Precision: 0.8875
+
+Epoch: 145 | Epoch Time: 3m 0s
+	Train Loss: 1.3258 - mIoU: 0.9091 - F1: 0.9479 - Recall: 0.9529 - Precision: 0.9523
+	 Val. Loss: 1.3384 - mIoU: 0.7850 - F1: 0.8560 - Recall: 0.8853 - Precision: 0.8849
+
+Epoch: 146 | Epoch Time: 2m 37s
+	Train Loss: 1.3258 - mIoU: 0.9110 - F1: 0.9496 - Recall: 0.9578 - Precision: 0.9486
+	 Val. Loss: 1.3387 - mIoU: 0.7844 - F1: 0.8562 - Recall: 0.8897 - Precision: 0.8821
+
+Epoch: 147 | Epoch Time: 2m 55s
+	Train Loss: 1.3218 - mIoU: 0.9141 - F1: 0.9515 - Recall: 0.9559 - Precision: 0.9546
+	 Val. Loss: 1.3379 - mIoU: 0.7875 - F1: 0.8580 - Recall: 0.8796 - Precision: 0.8924
+
+Epoch: 148 | Epoch Time: 2m 49s
+	Train Loss: 1.3251 - mIoU: 0.9157 - F1: 0.9531 - Recall: 0.9588 - Precision: 0.9537
+	 Val. Loss: 1.3383 - mIoU: 0.7832 - F1: 0.8550 - Recall: 0.8863 - Precision: 0.8834
+
+Epoch: 149 | Epoch Time: 2m 43s
+	Train Loss: 1.3227 - mIoU: 0.9150 - F1: 0.9523 - Recall: 0.9570 - Precision: 0.9543
+	 Val. Loss: 1.3375 - mIoU: 0.7900 - F1: 0.8608 - Recall: 0.8855 - Precision: 0.8922
+
+Valid mIoU improved from 0.7917 to 0.7934. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 150 | Epoch Time: 2m 37s
+	Train Loss: 1.3246 - mIoU: 0.9101 - F1: 0.9481 - Recall: 0.9545 - Precision: 0.9497
+	 Val. Loss: 1.3369 - mIoU: 0.7934 - F1: 0.8642 - Recall: 0.8945 - Precision: 0.8880
+
+Epoch: 151 | Epoch Time: 2m 51s
+	Train Loss: 1.3233 - mIoU: 0.9148 - F1: 0.9519 - Recall: 0.9568 - Precision: 0.9538
+	 Val. Loss: 1.3372 - mIoU: 0.7898 - F1: 0.8605 - Recall: 0.8862 - Precision: 0.8910
+
+Epoch: 152 | Epoch Time: 2m 54s
+	Train Loss: 1.3222 - mIoU: 0.9111 - F1: 0.9493 - Recall: 0.9557 - Precision: 0.9500
+	 Val. Loss: 1.3372 - mIoU: 0.7928 - F1: 0.8632 - Recall: 0.8969 - Precision: 0.8855
+
+Epoch: 153 | Epoch Time: 2m 49s
+	Train Loss: 1.3250 - mIoU: 0.9117 - F1: 0.9501 - Recall: 0.9550 - Precision: 0.9531
+	 Val. Loss: 1.3375 - mIoU: 0.7923 - F1: 0.8638 - Recall: 0.8879 - Precision: 0.8922
+
+Epoch: 154 | Epoch Time: 2m 50s
+	Train Loss: 1.3235 - mIoU: 0.9140 - F1: 0.9517 - Recall: 0.9560 - Precision: 0.9548
+	 Val. Loss: 1.3379 - mIoU: 0.7886 - F1: 0.8607 - Recall: 0.8914 - Precision: 0.8850
+
+Epoch: 155 | Epoch Time: 2m 44s
+	Train Loss: 1.3225 - mIoU: 0.9125 - F1: 0.9499 - Recall: 0.9555 - Precision: 0.9518
+	 Val. Loss: 1.3376 - mIoU: 0.7916 - F1: 0.8626 - Recall: 0.8874 - Precision: 0.8912
+
+Epoch: 156 | Epoch Time: 2m 46s
+	Train Loss: 1.3233 - mIoU: 0.9129 - F1: 0.9508 - Recall: 0.9577 - Precision: 0.9507
+	 Val. Loss: 1.3376 - mIoU: 0.7894 - F1: 0.8607 - Recall: 0.8840 - Precision: 0.8906
+
+Epoch: 157 | Epoch Time: 2m 43s
+	Train Loss: 1.3247 - mIoU: 0.9121 - F1: 0.9496 - Recall: 0.9552 - Precision: 0.9521
+	 Val. Loss: 1.3381 - mIoU: 0.7888 - F1: 0.8614 - Recall: 0.8833 - Precision: 0.8920
+
+Epoch: 158 | Epoch Time: 2m 55s
+	Train Loss: 1.3203 - mIoU: 0.9178 - F1: 0.9543 - Recall: 0.9589 - Precision: 0.9553
+	 Val. Loss: 1.3380 - mIoU: 0.7905 - F1: 0.8606 - Recall: 0.8746 - Precision: 0.8989
+
+Epoch: 159 | Epoch Time: 2m 58s
+	Train Loss: 1.3257 - mIoU: 0.9140 - F1: 0.9520 - Recall: 0.9557 - Precision: 0.9541
+	 Val. Loss: 1.3380 - mIoU: 0.7852 - F1: 0.8590 - Recall: 0.8948 - Precision: 0.8780
+
+Epoch: 160 | Epoch Time: 2m 53s
+	Train Loss: 1.3241 - mIoU: 0.9140 - F1: 0.9511 - Recall: 0.9578 - Precision: 0.9517
+	 Val. Loss: 1.3382 - mIoU: 0.7903 - F1: 0.8623 - Recall: 0.8874 - Precision: 0.8897
+
+Epoch: 161 | Epoch Time: 2m 58s
+	Train Loss: 1.3216 - mIoU: 0.9136 - F1: 0.9509 - Recall: 0.9571 - Precision: 0.9531
+	 Val. Loss: 1.3379 - mIoU: 0.7909 - F1: 0.8628 - Recall: 0.8942 - Precision: 0.8848
+
+Epoch: 162 | Epoch Time: 2m 49s
+	Train Loss: 1.3232 - mIoU: 0.9163 - F1: 0.9534 - Recall: 0.9582 - Precision: 0.9547
+	 Val. Loss: 1.3390 - mIoU: 0.7841 - F1: 0.8579 - Recall: 0.8894 - Precision: 0.8823
+
+Epoch: 163 | Epoch Time: 2m 47s
+	Train Loss: 1.3218 - mIoU: 0.9166 - F1: 0.9531 - Recall: 0.9589 - Precision: 0.9539
+	 Val. Loss: 1.3380 - mIoU: 0.7863 - F1: 0.8591 - Recall: 0.8755 - Precision: 0.8949
+
+Epoch: 164 | Epoch Time: 2m 37s
+	Train Loss: 1.3225 - mIoU: 0.9158 - F1: 0.9522 - Recall: 0.9566 - Precision: 0.9554
+	 Val. Loss: 1.3372 - mIoU: 0.7934 - F1: 0.8652 - Recall: 0.8861 - Precision: 0.8950
+
+Epoch: 165 | Epoch Time: 2m 52s
+	Train Loss: 1.3257 - mIoU: 0.9158 - F1: 0.9523 - Recall: 0.9580 - Precision: 0.9529
+	 Val. Loss: 1.3377 - mIoU: 0.7892 - F1: 0.8607 - Recall: 0.8791 - Precision: 0.8910
+
+Valid mIoU improved from 0.7934 to 0.7975. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 166 | Epoch Time: 2m 55s
+	Train Loss: 1.3223 - mIoU: 0.9174 - F1: 0.9536 - Recall: 0.9602 - Precision: 0.9531
+	 Val. Loss: 1.3364 - mIoU: 0.7975 - F1: 0.8687 - Recall: 0.8872 - Precision: 0.8989
+
+Epoch: 167 | Epoch Time: 2m 52s
+	Train Loss: 1.3238 - mIoU: 0.9164 - F1: 0.9530 - Recall: 0.9574 - Precision: 0.9546
+	 Val. Loss: 1.3379 - mIoU: 0.7871 - F1: 0.8604 - Recall: 0.8976 - Precision: 0.8779
+
+Epoch: 168 | Epoch Time: 3m 1s
+	Train Loss: 1.3229 - mIoU: 0.9155 - F1: 0.9524 - Recall: 0.9581 - Precision: 0.9535
+	 Val. Loss: 1.3386 - mIoU: 0.7872 - F1: 0.8592 - Recall: 0.8812 - Precision: 0.8895
+
+Epoch: 169 | Epoch Time: 2m 46s
+	Train Loss: 1.3228 - mIoU: 0.9169 - F1: 0.9529 - Recall: 0.9596 - Precision: 0.9537
+	 Val. Loss: 1.3382 - mIoU: 0.7894 - F1: 0.8601 - Recall: 0.8776 - Precision: 0.8980
+
+Epoch: 170 | Epoch Time: 2m 42s
+	Train Loss: 1.3231 - mIoU: 0.9182 - F1: 0.9543 - Recall: 0.9582 - Precision: 0.9564
+	 Val. Loss: 1.3370 - mIoU: 0.7962 - F1: 0.8671 - Recall: 0.8868 - Precision: 0.8965
+
+Epoch: 171 | Epoch Time: 2m 44s
+	Train Loss: 1.3204 - mIoU: 0.9186 - F1: 0.9545 - Recall: 0.9588 - Precision: 0.9564
+	 Val. Loss: 1.3385 - mIoU: 0.7916 - F1: 0.8612 - Recall: 0.8761 - Precision: 0.8988
+
+Epoch: 172 | Epoch Time: 2m 31s
+	Train Loss: 1.3223 - mIoU: 0.9181 - F1: 0.9540 - Recall: 0.9597 - Precision: 0.9554
+	 Val. Loss: 1.3374 - mIoU: 0.7925 - F1: 0.8635 - Recall: 0.8833 - Precision: 0.8954
+
+Epoch: 173 | Epoch Time: 3m 6s
+	Train Loss: 1.3248 - mIoU: 0.9160 - F1: 0.9523 - Recall: 0.9588 - Precision: 0.9527
+	 Val. Loss: 1.3382 - mIoU: 0.7887 - F1: 0.8606 - Recall: 0.8896 - Precision: 0.8867
+
+Epoch: 174 | Epoch Time: 2m 35s
+	Train Loss: 1.3237 - mIoU: 0.9154 - F1: 0.9521 - Recall: 0.9579 - Precision: 0.9535
+	 Val. Loss: 1.3376 - mIoU: 0.7919 - F1: 0.8624 - Recall: 0.8818 - Precision: 0.8974
+
+Epoch: 175 | Epoch Time: 2m 39s
+	Train Loss: 1.3240 - mIoU: 0.9182 - F1: 0.9539 - Recall: 0.9588 - Precision: 0.9563
+	 Val. Loss: 1.3383 - mIoU: 0.7873 - F1: 0.8581 - Recall: 0.8763 - Precision: 0.8983
+
+Epoch: 176 | Epoch Time: 2m 42s
+	Train Loss: 1.3230 - mIoU: 0.9209 - F1: 0.9559 - Recall: 0.9609 - Precision: 0.9567
+	 Val. Loss: 1.3384 - mIoU: 0.7877 - F1: 0.8590 - Recall: 0.8845 - Precision: 0.8888
+
+Epoch: 177 | Epoch Time: 2m 56s
+	Train Loss: 1.3217 - mIoU: 0.9181 - F1: 0.9535 - Recall: 0.9601 - Precision: 0.9536
+	 Val. Loss: 1.3377 - mIoU: 0.7914 - F1: 0.8621 - Recall: 0.8849 - Precision: 0.8916
+
+Epoch: 178 | Epoch Time: 2m 30s
+	Train Loss: 1.3225 - mIoU: 0.9190 - F1: 0.9543 - Recall: 0.9598 - Precision: 0.9555
+	 Val. Loss: 1.3383 - mIoU: 0.7853 - F1: 0.8573 - Recall: 0.8875 - Precision: 0.8845
+
+Epoch: 179 | Epoch Time: 2m 42s
+	Train Loss: 1.3200 - mIoU: 0.9207 - F1: 0.9560 - Recall: 0.9604 - Precision: 0.9570
+	 Val. Loss: 1.3379 - mIoU: 0.7891 - F1: 0.8604 - Recall: 0.8807 - Precision: 0.8951
+
+Epoch: 180 | Epoch Time: 2m 31s
+	Train Loss: 1.3240 - mIoU: 0.9187 - F1: 0.9544 - Recall: 0.9586 - Precision: 0.9566
+	 Val. Loss: 1.3388 - mIoU: 0.7792 - F1: 0.8521 - Recall: 0.8834 - Precision: 0.8782
+
+Epoch: 181 | Epoch Time: 2m 39s
+	Train Loss: 1.3218 - mIoU: 0.9205 - F1: 0.9559 - Recall: 0.9600 - Precision: 0.9572
+	 Val. Loss: 1.3377 - mIoU: 0.7905 - F1: 0.8626 - Recall: 0.8824 - Precision: 0.8937
+
+Epoch: 182 | Epoch Time: 2m 44s
+	Train Loss: 1.3247 - mIoU: 0.9186 - F1: 0.9548 - Recall: 0.9614 - Precision: 0.9540
+	 Val. Loss: 1.3377 - mIoU: 0.7848 - F1: 0.8562 - Recall: 0.8814 - Precision: 0.8859
+
+Epoch: 183 | Epoch Time: 2m 40s
+	Train Loss: 1.3232 - mIoU: 0.9210 - F1: 0.9563 - Recall: 0.9634 - Precision: 0.9546
+	 Val. Loss: 1.3384 - mIoU: 0.7881 - F1: 0.8610 - Recall: 0.8866 - Precision: 0.8888
+
+Epoch: 184 | Epoch Time: 2m 27s
+	Train Loss: 1.3256 - mIoU: 0.9188 - F1: 0.9542 - Recall: 0.9597 - Precision: 0.9557
+	 Val. Loss: 1.3373 - mIoU: 0.7891 - F1: 0.8632 - Recall: 0.8850 - Precision: 0.8916
+
+Epoch: 185 | Epoch Time: 2m 46s
+	Train Loss: 1.3229 - mIoU: 0.9219 - F1: 0.9564 - Recall: 0.9609 - Precision: 0.9574
+	 Val. Loss: 1.3381 - mIoU: 0.7895 - F1: 0.8622 - Recall: 0.8779 - Precision: 0.8993
+
+Epoch: 186 | Epoch Time: 2m 41s
+	Train Loss: 1.3215 - mIoU: 0.9198 - F1: 0.9547 - Recall: 0.9611 - Precision: 0.9554
+	 Val. Loss: 1.3378 - mIoU: 0.7869 - F1: 0.8603 - Recall: 0.8951 - Precision: 0.8807
+
+Epoch: 187 | Epoch Time: 2m 43s
+	Train Loss: 1.3223 - mIoU: 0.9239 - F1: 0.9579 - Recall: 0.9635 - Precision: 0.9579
+	 Val. Loss: 1.3384 - mIoU: 0.7861 - F1: 0.8599 - Recall: 0.8891 - Precision: 0.8858
+
+Epoch: 188 | Epoch Time: 3m 3s
+	Train Loss: 1.3251 - mIoU: 0.9181 - F1: 0.9535 - Recall: 0.9597 - Precision: 0.9543
+	 Val. Loss: 1.3373 - mIoU: 0.7887 - F1: 0.8612 - Recall: 0.8887 - Precision: 0.8890
+
+Epoch: 189 | Epoch Time: 2m 54s
+	Train Loss: 1.3222 - mIoU: 0.9208 - F1: 0.9558 - Recall: 0.9613 - Precision: 0.9566
+	 Val. Loss: 1.3387 - mIoU: 0.7837 - F1: 0.8552 - Recall: 0.8687 - Precision: 0.8995
+
+Epoch: 190 | Epoch Time: 2m 48s
+	Train Loss: 1.3218 - mIoU: 0.9216 - F1: 0.9559 - Recall: 0.9616 - Precision: 0.9561
+	 Val. Loss: 1.3384 - mIoU: 0.7852 - F1: 0.8589 - Recall: 0.8789 - Precision: 0.8922
+
+Epoch: 191 | Epoch Time: 2m 50s
+	Train Loss: 1.3239 - mIoU: 0.9194 - F1: 0.9546 - Recall: 0.9588 - Precision: 0.9563
+	 Val. Loss: 1.3368 - mIoU: 0.7863 - F1: 0.8594 - Recall: 0.8915 - Precision: 0.8830
+
+Epoch: 192 | Epoch Time: 2m 54s
+	Train Loss: 1.3225 - mIoU: 0.9205 - F1: 0.9556 - Recall: 0.9615 - Precision: 0.9555
+	 Val. Loss: 1.3368 - mIoU: 0.7905 - F1: 0.8618 - Recall: 0.8839 - Precision: 0.8926
+
+Epoch: 193 | Epoch Time: 2m 44s
+	Train Loss: 1.3255 - mIoU: 0.9186 - F1: 0.9545 - Recall: 0.9621 - Precision: 0.9535
+	 Val. Loss: 1.3364 - mIoU: 0.7931 - F1: 0.8650 - Recall: 0.8960 - Precision: 0.8875
+
+Epoch: 194 | Epoch Time: 2m 44s
+	Train Loss: 1.3208 - mIoU: 0.9209 - F1: 0.9555 - Recall: 0.9609 - Precision: 0.9566
+	 Val. Loss: 1.3360 - mIoU: 0.7962 - F1: 0.8668 - Recall: 0.8902 - Precision: 0.8960
+
+Epoch: 195 | Epoch Time: 2m 52s
+	Train Loss: 1.3222 - mIoU: 0.9230 - F1: 0.9571 - Recall: 0.9621 - Precision: 0.9574
+	 Val. Loss: 1.3362 - mIoU: 0.7910 - F1: 0.8616 - Recall: 0.8846 - Precision: 0.8933
+
+Epoch: 196 | Epoch Time: 3m 2s
+	Train Loss: 1.3212 - mIoU: 0.9208 - F1: 0.9553 - Recall: 0.9600 - Precision: 0.9579
+	 Val. Loss: 1.3362 - mIoU: 0.7883 - F1: 0.8612 - Recall: 0.8913 - Precision: 0.8856
+
+Epoch: 197 | Epoch Time: 2m 30s
+	Train Loss: 1.3241 - mIoU: 0.9244 - F1: 0.9579 - Recall: 0.9634 - Precision: 0.9557
+	 Val. Loss: 1.3375 - mIoU: 0.7852 - F1: 0.8581 - Recall: 0.8851 - Precision: 0.8875
+
+Epoch: 198 | Epoch Time: 2m 32s
+	Train Loss: 1.3222 - mIoU: 0.9229 - F1: 0.9567 - Recall: 0.9617 - Precision: 0.9585
+	 Val. Loss: 1.3362 - mIoU: 0.7926 - F1: 0.8639 - Recall: 0.8943 - Precision: 0.8880
+
+Epoch: 199 | Epoch Time: 2m 30s
+	Train Loss: 1.3219 - mIoU: 0.9226 - F1: 0.9569 - Recall: 0.9613 - Precision: 0.9576
+	 Val. Loss: 1.3365 - mIoU: 0.7951 - F1: 0.8662 - Recall: 0.8867 - Precision: 0.8977
+
+Epoch: 200 | Epoch Time: 2m 34s
+	Train Loss: 1.3238 - mIoU: 0.9210 - F1: 0.9558 - Recall: 0.9616 - Precision: 0.9554
+	 Val. Loss: 1.3370 - mIoU: 0.7902 - F1: 0.8623 - Recall: 0.8846 - Precision: 0.8948
+
+Epoch: 201 | Epoch Time: 2m 43s
+	Train Loss: 1.3242 - mIoU: 0.9222 - F1: 0.9566 - Recall: 0.9616 - Precision: 0.9573
+	 Val. Loss: 1.3375 - mIoU: 0.7863 - F1: 0.8596 - Recall: 0.8907 - Precision: 0.8852
+
+Epoch: 202 | Epoch Time: 2m 34s
+	Train Loss: 1.3231 - mIoU: 0.9256 - F1: 0.9589 - Recall: 0.9650 - Precision: 0.9576
+	 Val. Loss: 1.3364 - mIoU: 0.7912 - F1: 0.8632 - Recall: 0.8941 - Precision: 0.8868
+
+Epoch: 203 | Epoch Time: 2m 37s
+	Train Loss: 1.3216 - mIoU: 0.9242 - F1: 0.9577 - Recall: 0.9615 - Precision: 0.9601
+	 Val. Loss: 1.3373 - mIoU: 0.7898 - F1: 0.8616 - Recall: 0.8778 - Precision: 0.8994
+
+Epoch: 204 | Epoch Time: 2m 36s
+	Train Loss: 1.3210 - mIoU: 0.9203 - F1: 0.9543 - Recall: 0.9597 - Precision: 0.9556
+	 Val. Loss: 1.3376 - mIoU: 0.7845 - F1: 0.8584 - Recall: 0.8953 - Precision: 0.8789
+
+Valid mIoU improved from 0.7975 to 0.7984. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 205 | Epoch Time: 2m 45s
+	Train Loss: 1.3239 - mIoU: 0.9203 - F1: 0.9548 - Recall: 0.9622 - Precision: 0.9542
+	 Val. Loss: 1.3348 - mIoU: 0.7984 - F1: 0.8688 - Recall: 0.8912 - Precision: 0.8974
+
+Epoch: 206 | Epoch Time: 2m 49s
+	Train Loss: 1.3231 - mIoU: 0.9218 - F1: 0.9558 - Recall: 0.9599 - Precision: 0.9595
+	 Val. Loss: 1.3353 - mIoU: 0.7939 - F1: 0.8656 - Recall: 0.8957 - Precision: 0.8889
+
+Epoch: 207 | Epoch Time: 2m 45s
+	Train Loss: 1.3227 - mIoU: 0.9243 - F1: 0.9580 - Recall: 0.9632 - Precision: 0.9586
+	 Val. Loss: 1.3370 - mIoU: 0.7904 - F1: 0.8627 - Recall: 0.8964 - Precision: 0.8843
+
+Epoch: 208 | Epoch Time: 2m 44s
+	Train Loss: 1.3222 - mIoU: 0.9234 - F1: 0.9573 - Recall: 0.9643 - Precision: 0.9564
+	 Val. Loss: 1.3375 - mIoU: 0.7873 - F1: 0.8595 - Recall: 0.8963 - Precision: 0.8808
+
+Epoch: 209 | Epoch Time: 3m 2s
+	Train Loss: 1.3218 - mIoU: 0.9244 - F1: 0.9578 - Recall: 0.9623 - Precision: 0.9596
+	 Val. Loss: 1.3376 - mIoU: 0.7904 - F1: 0.8622 - Recall: 0.8828 - Precision: 0.8960
+
+Epoch: 210 | Epoch Time: 2m 46s
+	Train Loss: 1.3238 - mIoU: 0.9228 - F1: 0.9570 - Recall: 0.9624 - Precision: 0.9576
+	 Val. Loss: 1.3383 - mIoU: 0.7846 - F1: 0.8550 - Recall: 0.8757 - Precision: 0.8944
+
+Epoch: 211 | Epoch Time: 2m 36s
+	Train Loss: 1.3211 - mIoU: 0.9255 - F1: 0.9591 - Recall: 0.9638 - Precision: 0.9589
+	 Val. Loss: 1.3387 - mIoU: 0.7843 - F1: 0.8562 - Recall: 0.8740 - Precision: 0.8967
+
+Epoch: 212 | Epoch Time: 2m 51s
+	Train Loss: 1.3232 - mIoU: 0.9230 - F1: 0.9561 - Recall: 0.9615 - Precision: 0.9577
+	 Val. Loss: 1.3377 - mIoU: 0.7889 - F1: 0.8616 - Recall: 0.8861 - Precision: 0.8916
+
+Epoch: 213 | Epoch Time: 2m 52s
+	Train Loss: 1.3214 - mIoU: 0.9254 - F1: 0.9588 - Recall: 0.9645 - Precision: 0.9584
+	 Val. Loss: 1.3382 - mIoU: 0.7903 - F1: 0.8632 - Recall: 0.8783 - Precision: 0.8998
+
+Epoch: 214 | Epoch Time: 3m 0s
+	Train Loss: 1.3226 - mIoU: 0.9206 - F1: 0.9547 - Recall: 0.9598 - Precision: 0.9559
+	 Val. Loss: 1.3378 - mIoU: 0.7947 - F1: 0.8663 - Recall: 0.8783 - Precision: 0.9049
+
+Epoch: 215 | Epoch Time: 2m 42s
+	Train Loss: 1.3190 - mIoU: 0.9243 - F1: 0.9578 - Recall: 0.9630 - Precision: 0.9562
+	 Val. Loss: 1.3365 - mIoU: 0.7936 - F1: 0.8656 - Recall: 0.8897 - Precision: 0.8940
+
+Epoch: 216 | Epoch Time: 2m 48s
+	Train Loss: 1.3202 - mIoU: 0.9265 - F1: 0.9592 - Recall: 0.9645 - Precision: 0.9594
+	 Val. Loss: 1.3381 - mIoU: 0.7916 - F1: 0.8627 - Recall: 0.8761 - Precision: 0.9024
+
+Epoch: 217 | Epoch Time: 3m 1s
+	Train Loss: 1.3205 - mIoU: 0.9253 - F1: 0.9582 - Recall: 0.9640 - Precision: 0.9566
+	 Val. Loss: 1.3375 - mIoU: 0.7905 - F1: 0.8625 - Recall: 0.8834 - Precision: 0.8957
+
+Epoch: 218 | Epoch Time: 2m 52s
+	Train Loss: 1.3198 - mIoU: 0.9261 - F1: 0.9588 - Recall: 0.9627 - Precision: 0.9597
+	 Val. Loss: 1.3371 - mIoU: 0.7900 - F1: 0.8633 - Recall: 0.8844 - Precision: 0.8932
+
+Epoch: 219 | Epoch Time: 2m 57s
+	Train Loss: 1.3235 - mIoU: 0.9271 - F1: 0.9597 - Recall: 0.9648 - Precision: 0.9597
+	 Val. Loss: 1.3380 - mIoU: 0.7843 - F1: 0.8572 - Recall: 0.8775 - Precision: 0.8908
+
+Epoch: 220 | Epoch Time: 2m 48s
+	Train Loss: 1.3203 - mIoU: 0.9234 - F1: 0.9569 - Recall: 0.9617 - Precision: 0.9577
+	 Val. Loss: 1.3374 - mIoU: 0.7889 - F1: 0.8597 - Recall: 0.8768 - Precision: 0.8980
+
+Epoch: 221 | Epoch Time: 2m 38s
+	Train Loss: 1.3199 - mIoU: 0.9274 - F1: 0.9595 - Recall: 0.9657 - Precision: 0.9570
+	 Val. Loss: 1.3375 - mIoU: 0.7872 - F1: 0.8593 - Recall: 0.8865 - Precision: 0.8866
+
+Epoch: 222 | Epoch Time: 2m 59s
+	Train Loss: 1.3224 - mIoU: 0.9299 - F1: 0.9615 - Recall: 0.9657 - Precision: 0.9605
+	 Val. Loss: 1.3370 - mIoU: 0.7898 - F1: 0.8604 - Recall: 0.8775 - Precision: 0.8961
+
+Epoch: 223 | Epoch Time: 2m 47s
+	Train Loss: 1.3228 - mIoU: 0.9289 - F1: 0.9608 - Recall: 0.9647 - Precision: 0.9609
+	 Val. Loss: 1.3373 - mIoU: 0.7854 - F1: 0.8584 - Recall: 0.8910 - Precision: 0.8813
+
+Epoch: 224 | Epoch Time: 2m 41s
+	Train Loss: 1.3206 - mIoU: 0.9278 - F1: 0.9602 - Recall: 0.9662 - Precision: 0.9590
+	 Val. Loss: 1.3377 - mIoU: 0.7867 - F1: 0.8589 - Recall: 0.8882 - Precision: 0.8858
+
+Epoch: 225 | Epoch Time: 2m 48s
+	Train Loss: 1.3208 - mIoU: 0.9265 - F1: 0.9596 - Recall: 0.9633 - Precision: 0.9597
+	 Val. Loss: 1.3374 - mIoU: 0.7881 - F1: 0.8603 - Recall: 0.8868 - Precision: 0.8881
+
+Epoch: 226 | Epoch Time: 3m 4s
+	Train Loss: 1.3228 - mIoU: 0.9227 - F1: 0.9563 - Recall: 0.9637 - Precision: 0.9567
+	 Val. Loss: 1.3379 - mIoU: 0.7876 - F1: 0.8600 - Recall: 0.8823 - Precision: 0.8935
+
+Epoch: 227 | Epoch Time: 2m 52s
+	Train Loss: 1.3231 - mIoU: 0.9278 - F1: 0.9606 - Recall: 0.9661 - Precision: 0.9591
+	 Val. Loss: 1.3377 - mIoU: 0.7863 - F1: 0.8590 - Recall: 0.8887 - Precision: 0.8865
+
+Epoch: 228 | Epoch Time: 2m 56s
+	Train Loss: 1.3220 - mIoU: 0.9246 - F1: 0.9581 - Recall: 0.9637 - Precision: 0.9574
+	 Val. Loss: 1.3368 - mIoU: 0.7915 - F1: 0.8642 - Recall: 0.8880 - Precision: 0.8926
+
+Epoch: 229 | Epoch Time: 2m 54s
+	Train Loss: 1.3206 - mIoU: 0.9269 - F1: 0.9588 - Recall: 0.9626 - Precision: 0.9583
+	 Val. Loss: 1.3378 - mIoU: 0.7901 - F1: 0.8622 - Recall: 0.8849 - Precision: 0.8932
+
+Epoch: 230 | Epoch Time: 3m 2s
+	Train Loss: 1.3221 - mIoU: 0.9271 - F1: 0.9593 - Recall: 0.9630 - Precision: 0.9605
+	 Val. Loss: 1.3366 - mIoU: 0.7933 - F1: 0.8645 - Recall: 0.8895 - Precision: 0.8926
+
+Epoch: 231 | Epoch Time: 3m 18s
+	Train Loss: 1.3209 - mIoU: 0.9267 - F1: 0.9597 - Recall: 0.9652 - Precision: 0.9590
+	 Val. Loss: 1.3374 - mIoU: 0.7939 - F1: 0.8654 - Recall: 0.8807 - Precision: 0.9007
+
+Epoch: 232 | Epoch Time: 3m 23s
+	Train Loss: 1.3213 - mIoU: 0.9287 - F1: 0.9608 - Recall: 0.9656 - Precision: 0.9594
+	 Val. Loss: 1.3372 - mIoU: 0.7864 - F1: 0.8593 - Recall: 0.8980 - Precision: 0.8786
+
+Epoch: 233 | Epoch Time: 3m 3s
+	Train Loss: 1.3227 - mIoU: 0.9268 - F1: 0.9589 - Recall: 0.9619 - Precision: 0.9625
+	 Val. Loss: 1.3376 - mIoU: 0.7862 - F1: 0.8596 - Recall: 0.8936 - Precision: 0.8822
+
+Epoch: 234 | Epoch Time: 2m 46s
+	Train Loss: 1.3201 - mIoU: 0.9273 - F1: 0.9604 - Recall: 0.9663 - Precision: 0.9586
+	 Val. Loss: 1.3370 - mIoU: 0.7950 - F1: 0.8651 - Recall: 0.8854 - Precision: 0.8990
+
+Epoch: 235 | Epoch Time: 2m 51s
+	Train Loss: 1.3203 - mIoU: 0.9295 - F1: 0.9615 - Recall: 0.9667 - Precision: 0.9603
+	 Val. Loss: 1.3350 - mIoU: 0.7963 - F1: 0.8676 - Recall: 0.8949 - Precision: 0.8919
+
+Epoch: 236 | Epoch Time: 2m 48s
+	Train Loss: 1.3221 - mIoU: 0.9281 - F1: 0.9605 - Recall: 0.9657 - Precision: 0.9600
+	 Val. Loss: 1.3358 - mIoU: 0.7980 - F1: 0.8682 - Recall: 0.8859 - Precision: 0.8931
+
+Valid mIoU improved from 0.7984 to 0.7995. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 237 | Epoch Time: 3m 10s
+	Train Loss: 1.3197 - mIoU: 0.9298 - F1: 0.9617 - Recall: 0.9656 - Precision: 0.9618
+	 Val. Loss: 1.3358 - mIoU: 0.7995 - F1: 0.8694 - Recall: 0.8876 - Precision: 0.8933
+
+Epoch: 238 | Epoch Time: 2m 57s
+	Train Loss: 1.3223 - mIoU: 0.9282 - F1: 0.9599 - Recall: 0.9661 - Precision: 0.9583
+	 Val. Loss: 1.3356 - mIoU: 0.7984 - F1: 0.8684 - Recall: 0.8893 - Precision: 0.8902
+
+Epoch: 239 | Epoch Time: 2m 55s
+	Train Loss: 1.3223 - mIoU: 0.9294 - F1: 0.9602 - Recall: 0.9647 - Precision: 0.9623
+	 Val. Loss: 1.3356 - mIoU: 0.7977 - F1: 0.8679 - Recall: 0.8915 - Precision: 0.8875
+
+Epoch: 240 | Epoch Time: 2m 57s
+	Train Loss: 1.3233 - mIoU: 0.9317 - F1: 0.9632 - Recall: 0.9672 - Precision: 0.9620
+	 Val. Loss: 1.3362 - mIoU: 0.7965 - F1: 0.8672 - Recall: 0.8882 - Precision: 0.8888
+
+Epoch: 241 | Epoch Time: 2m 54s
+	Train Loss: 1.3217 - mIoU: 0.9291 - F1: 0.9609 - Recall: 0.9663 - Precision: 0.9594
+	 Val. Loss: 1.3365 - mIoU: 0.7942 - F1: 0.8659 - Recall: 0.8851 - Precision: 0.8896
+
+Valid mIoU improved from 0.7995 to 0.8006. Saving checkpoint: run_files\Kvasir-SEG\TGANET_Kvasir-SEG_None_lr0.0001_20250626-040151\checkpoint.pth
+Epoch: 242 | Epoch Time: 2m 50s
+	Train Loss: 1.3186 - mIoU: 0.9286 - F1: 0.9601 - Recall: 0.9633 - Precision: 0.9632
+	 Val. Loss: 1.3360 - mIoU: 0.8006 - F1: 0.8704 - Recall: 0.8845 - Precision: 0.9053
+
+Epoch: 243 | Epoch Time: 2m 51s
+	Train Loss: 1.3192 - mIoU: 0.9290 - F1: 0.9606 - Recall: 0.9662 - Precision: 0.9602
+	 Val. Loss: 1.3363 - mIoU: 0.7988 - F1: 0.8688 - Recall: 0.8842 - Precision: 0.9033
+
+Epoch: 244 | Epoch Time: 2m 56s
+	Train Loss: 1.3233 - mIoU: 0.9294 - F1: 0.9615 - Recall: 0.9665 - Precision: 0.9604
+	 Val. Loss: 1.3360 - mIoU: 0.7970 - F1: 0.8678 - Recall: 0.8892 - Precision: 0.8884
+
+Epoch: 245 | Epoch Time: 2m 52s
+	Train Loss: 1.3212 - mIoU: 0.9317 - F1: 0.9627 - Recall: 0.9665 - Precision: 0.9626
+	 Val. Loss: 1.3360 - mIoU: 0.7988 - F1: 0.8687 - Recall: 0.8862 - Precision: 0.9018
+
+Epoch: 246 | Epoch Time: 2m 57s
+	Train Loss: 1.3228 - mIoU: 0.9284 - F1: 0.9598 - Recall: 0.9657 - Precision: 0.9605
+	 Val. Loss: 1.3356 - mIoU: 0.7949 - F1: 0.8662 - Recall: 0.8951 - Precision: 0.8812
+
+Epoch: 247 | Epoch Time: 2m 38s
+	Train Loss: 1.3220 - mIoU: 0.9320 - F1: 0.9626 - Recall: 0.9669 - Precision: 0.9626
+	 Val. Loss: 1.3358 - mIoU: 0.7975 - F1: 0.8680 - Recall: 0.8890 - Precision: 0.8979
+
+Epoch: 248 | Epoch Time: 2m 39s
+	Train Loss: 1.3236 - mIoU: 0.9305 - F1: 0.9616 - Recall: 0.9669 - Precision: 0.9611
+	 Val. Loss: 1.3356 - mIoU: 0.7976 - F1: 0.8682 - Recall: 0.8914 - Precision: 0.8959
+
+Epoch: 249 | Epoch Time: 2m 46s
+	Train Loss: 1.3210 - mIoU: 0.9307 - F1: 0.9621 - Recall: 0.9676 - Precision: 0.9606
+	 Val. Loss: 1.3363 - mIoU: 0.7963 - F1: 0.8669 - Recall: 0.8843 - Precision: 0.8921
+
+Epoch: 250 | Epoch Time: 2m 56s
+	Train Loss: 1.3193 - mIoU: 0.9301 - F1: 0.9608 - Recall: 0.9651 - Precision: 0.9624
+	 Val. Loss: 1.3364 - mIoU: 0.7973 - F1: 0.8678 - Recall: 0.8867 - Precision: 0.8993
+
+Epoch: 251 | Epoch Time: 2m 53s
+	Train Loss: 1.3194 - mIoU: 0.9297 - F1: 0.9610 - Recall: 0.9655 - Precision: 0.9615
+	 Val. Loss: 1.3363 - mIoU: 0.7946 - F1: 0.8660 - Recall: 0.8899 - Precision: 0.8935
+
+Epoch: 252 | Epoch Time: 2m 54s
+	Train Loss: 1.3218 - mIoU: 0.9313 - F1: 0.9623 - Recall: 0.9664 - Precision: 0.9627
+	 Val. Loss: 1.3361 - mIoU: 0.7976 - F1: 0.8678 - Recall: 0.8876 - Precision: 0.8993
+
+Epoch: 253 | Epoch Time: 2m 51s
+	Train Loss: 1.3239 - mIoU: 0.9291 - F1: 0.9607 - Recall: 0.9678 - Precision: 0.9585
+	 Val. Loss: 1.3361 - mIoU: 0.7928 - F1: 0.8644 - Recall: 0.8962 - Precision: 0.8859
+
+Epoch: 254 | Epoch Time: 2m 51s
+	Train Loss: 1.3208 - mIoU: 0.9288 - F1: 0.9608 - Recall: 0.9649 - Precision: 0.9616
+	 Val. Loss: 1.3360 - mIoU: 0.7955 - F1: 0.8669 - Recall: 0.8892 - Precision: 0.8954
+
+Epoch: 255 | Epoch Time: 2m 50s
+	Train Loss: 1.3218 - mIoU: 0.9297 - F1: 0.9609 - Recall: 0.9654 - Precision: 0.9614
+	 Val. Loss: 1.3352 - mIoU: 0.7957 - F1: 0.8669 - Recall: 0.8973 - Precision: 0.8887
+
+Epoch: 256 | Epoch Time: 3m 12s
+	Train Loss: 1.3193 - mIoU: 0.9324 - F1: 0.9628 - Recall: 0.9659 - Precision: 0.9638
+	 Val. Loss: 1.3358 - mIoU: 0.7991 - F1: 0.8688 - Recall: 0.8874 - Precision: 0.9010
+
+Epoch: 257 | Epoch Time: 3m 3s
+	Train Loss: 1.3230 - mIoU: 0.9317 - F1: 0.9629 - Recall: 0.9680 - Precision: 0.9617
+	 Val. Loss: 1.3357 - mIoU: 0.7952 - F1: 0.8667 - Recall: 0.8941 - Precision: 0.8907
+
+Epoch: 258 | Epoch Time: 2m 57s
+	Train Loss: 1.3239 - mIoU: 0.9300 - F1: 0.9616 - Recall: 0.9674 - Precision: 0.9603
+	 Val. Loss: 1.3362 - mIoU: 0.7943 - F1: 0.8658 - Recall: 0.8917 - Precision: 0.8833
+
+Epoch: 259 | Epoch Time: 2m 50s
+	Train Loss: 1.3228 - mIoU: 0.9316 - F1: 0.9621 - Recall: 0.9658 - Precision: 0.9623
+	 Val. Loss: 1.3357 - mIoU: 0.7977 - F1: 0.8679 - Recall: 0.8903 - Precision: 0.8965
+
+Epoch: 260 | Epoch Time: 2m 57s
+	Train Loss: 1.3223 - mIoU: 0.9302 - F1: 0.9616 - Recall: 0.9668 - Precision: 0.9610
+	 Val. Loss: 1.3365 - mIoU: 0.7939 - F1: 0.8652 - Recall: 0.8902 - Precision: 0.8924
+
+Epoch: 261 | Epoch Time: 2m 47s
+	Train Loss: 1.3202 - mIoU: 0.9309 - F1: 0.9620 - Recall: 0.9658 - Precision: 0.9619
+	 Val. Loss: 1.3365 - mIoU: 0.7952 - F1: 0.8659 - Recall: 0.8870 - Precision: 0.8884
+
+Epoch: 262 | Epoch Time: 3m 13s
+	Train Loss: 1.3196 - mIoU: 0.9298 - F1: 0.9611 - Recall: 0.9652 - Precision: 0.9622
+	 Val. Loss: 1.3364 - mIoU: 0.7958 - F1: 0.8661 - Recall: 0.8884 - Precision: 0.8964
+
+Epoch: 263 | Epoch Time: 3m 0s
+	Train Loss: 1.3193 - mIoU: 0.9317 - F1: 0.9627 - Recall: 0.9681 - Precision: 0.9612
+	 Val. Loss: 1.3361 - mIoU: 0.7955 - F1: 0.8662 - Recall: 0.8904 - Precision: 0.8949
+
+Epoch: 264 | Epoch Time: 3m 4s
+	Train Loss: 1.3226 - mIoU: 0.9282 - F1: 0.9603 - Recall: 0.9651 - Precision: 0.9606
+	 Val. Loss: 1.3360 - mIoU: 0.7964 - F1: 0.8670 - Recall: 0.8894 - Precision: 0.8961
+
+Epoch: 265 | Epoch Time: 2m 46s
+	Train Loss: 1.3199 - mIoU: 0.9316 - F1: 0.9622 - Recall: 0.9664 - Precision: 0.9618
+	 Val. Loss: 1.3363 - mIoU: 0.7965 - F1: 0.8666 - Recall: 0.8865 - Precision: 0.8989
+
+Epoch: 266 | Epoch Time: 2m 59s
+	Train Loss: 1.3242 - mIoU: 0.9283 - F1: 0.9597 - Recall: 0.9665 - Precision: 0.9593
+	 Val. Loss: 1.3364 - mIoU: 0.7961 - F1: 0.8667 - Recall: 0.8868 - Precision: 0.8984
+
+Epoch: 267 | Epoch Time: 3m 16s
+	Train Loss: 1.3212 - mIoU: 0.9320 - F1: 0.9625 - Recall: 0.9659 - Precision: 0.9639
+	 Val. Loss: 1.3362 - mIoU: 0.7952 - F1: 0.8661 - Recall: 0.8916 - Precision: 0.8929
+
+Epoch: 268 | Epoch Time: 2m 50s
+	Train Loss: 1.3227 - mIoU: 0.9288 - F1: 0.9606 - Recall: 0.9655 - Precision: 0.9608
+	 Val. Loss: 1.3361 - mIoU: 0.7956 - F1: 0.8664 - Recall: 0.8908 - Precision: 0.8941
+
+Epoch: 269 | Epoch Time: 2m 50s
+	Train Loss: 1.3194 - mIoU: 0.9311 - F1: 0.9621 - Recall: 0.9671 - Precision: 0.9619
+	 Val. Loss: 1.3366 - mIoU: 0.7947 - F1: 0.8659 - Recall: 0.8856 - Precision: 0.8892
+
+Epoch: 270 | Epoch Time: 2m 43s
+	Train Loss: 1.3225 - mIoU: 0.9321 - F1: 0.9630 - Recall: 0.9676 - Precision: 0.9610
+	 Val. Loss: 1.3363 - mIoU: 0.7933 - F1: 0.8648 - Recall: 0.8926 - Precision: 0.8901
+
+Epoch: 271 | Epoch Time: 2m 55s
+	Train Loss: 1.3198 - mIoU: 0.9297 - F1: 0.9612 - Recall: 0.9647 - Precision: 0.9625
+	 Val. Loss: 1.3362 - mIoU: 0.7963 - F1: 0.8668 - Recall: 0.8888 - Precision: 0.8966
+
+Epoch: 272 | Epoch Time: 2m 54s
+	Train Loss: 1.3207 - mIoU: 0.9305 - F1: 0.9611 - Recall: 0.9664 - Precision: 0.9615
+	 Val. Loss: 1.3360 - mIoU: 0.7960 - F1: 0.8669 - Recall: 0.8901 - Precision: 0.8953
+
+Epoch: 273 | Epoch Time: 2m 38s
+	Train Loss: 1.3220 - mIoU: 0.9308 - F1: 0.9621 - Recall: 0.9662 - Precision: 0.9621
+	 Val. Loss: 1.3359 - mIoU: 0.7952 - F1: 0.8664 - Recall: 0.8912 - Precision: 0.8932
+
+Epoch: 274 | Epoch Time: 2m 59s
+	Train Loss: 1.3212 - mIoU: 0.9315 - F1: 0.9625 - Recall: 0.9671 - Precision: 0.9624
+	 Val. Loss: 1.3364 - mIoU: 0.7949 - F1: 0.8662 - Recall: 0.8868 - Precision: 0.8886
+
+Epoch: 275 | Epoch Time: 2m 59s
+	Train Loss: 1.3235 - mIoU: 0.9307 - F1: 0.9618 - Recall: 0.9653 - Precision: 0.9629
+	 Val. Loss: 1.3362 - mIoU: 0.7940 - F1: 0.8653 - Recall: 0.8926 - Precision: 0.8909
+
+Epoch: 276 | Epoch Time: 2m 59s
+	Train Loss: 1.3213 - mIoU: 0.9311 - F1: 0.9621 - Recall: 0.9653 - Precision: 0.9624
+	 Val. Loss: 1.3361 - mIoU: 0.7957 - F1: 0.8664 - Recall: 0.8905 - Precision: 0.8945
+
+Epoch: 277 | Epoch Time: 3m 8s
+	Train Loss: 1.3234 - mIoU: 0.9281 - F1: 0.9601 - Recall: 0.9667 - Precision: 0.9584
+	 Val. Loss: 1.3356 - mIoU: 0.7942 - F1: 0.8657 - Recall: 0.8970 - Precision: 0.8873
+
+Epoch: 278 | Epoch Time: 3m 3s
+	Train Loss: 1.3214 - mIoU: 0.9295 - F1: 0.9611 - Recall: 0.9660 - Precision: 0.9608
+	 Val. Loss: 1.3367 - mIoU: 0.7948 - F1: 0.8657 - Recall: 0.8875 - Precision: 0.8963
+
+Epoch: 279 | Epoch Time: 2m 51s
+	Train Loss: 1.3223 - mIoU: 0.9285 - F1: 0.9602 - Recall: 0.9663 - Precision: 0.9596
+	 Val. Loss: 1.3355 - mIoU: 0.7954 - F1: 0.8665 - Recall: 0.8943 - Precision: 0.8908
+
+Epoch: 280 | Epoch Time: 2m 49s
+	Train Loss: 1.3229 - mIoU: 0.9289 - F1: 0.9601 - Recall: 0.9656 - Precision: 0.9596
+	 Val. Loss: 1.3363 - mIoU: 0.7959 - F1: 0.8667 - Recall: 0.8876 - Precision: 0.8971
+
+Epoch: 281 | Epoch Time: 2m 57s
+	Train Loss: 1.3221 - mIoU: 0.9327 - F1: 0.9637 - Recall: 0.9688 - Precision: 0.9614
+	 Val. Loss: 1.3363 - mIoU: 0.7950 - F1: 0.8660 - Recall: 0.8888 - Precision: 0.8956
+
+Epoch: 282 | Epoch Time: 3m 6s
+	Train Loss: 1.3197 - mIoU: 0.9323 - F1: 0.9633 - Recall: 0.9683 - Precision: 0.9616
+	 Val. Loss: 1.3358 - mIoU: 0.7962 - F1: 0.8669 - Recall: 0.8912 - Precision: 0.8943
+
+Epoch: 283 | Epoch Time: 2m 48s
+	Train Loss: 1.3183 - mIoU: 0.9322 - F1: 0.9628 - Recall: 0.9678 - Precision: 0.9622
+	 Val. Loss: 1.3363 - mIoU: 0.7970 - F1: 0.8677 - Recall: 0.8873 - Precision: 0.8988
+
+Epoch: 284 | Epoch Time: 2m 59s
+	Train Loss: 1.3204 - mIoU: 0.9279 - F1: 0.9592 - Recall: 0.9629 - Precision: 0.9608
+	 Val. Loss: 1.3363 - mIoU: 0.7976 - F1: 0.8678 - Recall: 0.8861 - Precision: 0.9001
+
+Epoch: 285 | Epoch Time: 2m 45s
+	Train Loss: 1.3209 - mIoU: 0.9344 - F1: 0.9646 - Recall: 0.9681 - Precision: 0.9642
+	 Val. Loss: 1.3360 - mIoU: 0.7957 - F1: 0.8667 - Recall: 0.8899 - Precision: 0.8951
+
+Epoch: 286 | Epoch Time: 2m 43s
+	Train Loss: 1.3211 - mIoU: 0.9303 - F1: 0.9612 - Recall: 0.9653 - Precision: 0.9628
+	 Val. Loss: 1.3357 - mIoU: 0.7973 - F1: 0.8678 - Recall: 0.8910 - Precision: 0.8959
+
+Epoch: 287 | Epoch Time: 2m 45s
+	Train Loss: 1.3234 - mIoU: 0.9320 - F1: 0.9630 - Recall: 0.9668 - Precision: 0.9621
+	 Val. Loss: 1.3363 - mIoU: 0.7947 - F1: 0.8657 - Recall: 0.8895 - Precision: 0.8941
+
+Epoch: 288 | Epoch Time: 2m 40s
+	Train Loss: 1.3204 - mIoU: 0.9320 - F1: 0.9628 - Recall: 0.9677 - Precision: 0.9609
+	 Val. Loss: 1.3362 - mIoU: 0.7976 - F1: 0.8681 - Recall: 0.8851 - Precision: 0.9016
+
+Epoch: 289 | Epoch Time: 2m 44s
+	Train Loss: 1.3196 - mIoU: 0.9313 - F1: 0.9622 - Recall: 0.9669 - Precision: 0.9622
+	 Val. Loss: 1.3360 - mIoU: 0.7974 - F1: 0.8678 - Recall: 0.8892 - Precision: 0.8972
+
+Epoch: 290 | Epoch Time: 2m 54s
+	Train Loss: 1.3209 - mIoU: 0.9300 - F1: 0.9613 - Recall: 0.9661 - Precision: 0.9614
+	 Val. Loss: 1.3363 - mIoU: 0.7951 - F1: 0.8661 - Recall: 0.8900 - Precision: 0.8941
+
+Epoch: 291 | Epoch Time: 2m 55s
+	Train Loss: 1.3231 - mIoU: 0.9289 - F1: 0.9599 - Recall: 0.9667 - Precision: 0.9587
+	 Val. Loss: 1.3359 - mIoU: 0.7964 - F1: 0.8670 - Recall: 0.8902 - Precision: 0.8870
+
+Epoch: 292 | Epoch Time: 2m 45s
+	Train Loss: 1.3204 - mIoU: 0.9307 - F1: 0.9620 - Recall: 0.9662 - Precision: 0.9621
+	 Val. Loss: 1.3362 - mIoU: 0.7961 - F1: 0.8668 - Recall: 0.8894 - Precision: 0.8960
+
+Epoch: 293 | Epoch Time: 2m 51s
+	Train Loss: 1.3208 - mIoU: 0.9313 - F1: 0.9622 - Recall: 0.9677 - Precision: 0.9613
+	 Val. Loss: 1.3360 - mIoU: 0.7958 - F1: 0.8669 - Recall: 0.8903 - Precision: 0.8947
+
+Epoch: 294 | Epoch Time: 2m 52s
+	Train Loss: 1.3213 - mIoU: 0.9302 - F1: 0.9622 - Recall: 0.9662 - Precision: 0.9611
+	 Val. Loss: 1.3361 - mIoU: 0.7939 - F1: 0.8652 - Recall: 0.8934 - Precision: 0.8901
+
+Epoch: 295 | Epoch Time: 2m 49s
+	Train Loss: 1.3200 - mIoU: 0.9300 - F1: 0.9616 - Recall: 0.9656 - Precision: 0.9618
+	 Val. Loss: 1.3363 - mIoU: 0.7961 - F1: 0.8669 - Recall: 0.8881 - Precision: 0.8970
+
+Epoch: 296 | Epoch Time: 2m 50s
+	Train Loss: 1.3216 - mIoU: 0.9317 - F1: 0.9626 - Recall: 0.9662 - Precision: 0.9629
+	 Val. Loss: 1.3364 - mIoU: 0.7960 - F1: 0.8665 - Recall: 0.8870 - Precision: 0.8979
+
+Epoch: 297 | Epoch Time: 3m 11s
+	Train Loss: 1.3215 - mIoU: 0.9301 - F1: 0.9615 - Recall: 0.9657 - Precision: 0.9618
+	 Val. Loss: 1.3364 - mIoU: 0.7948 - F1: 0.8659 - Recall: 0.8905 - Precision: 0.8936
+
+Epoch: 298 | Epoch Time: 2m 50s
+	Train Loss: 1.3228 - mIoU: 0.9346 - F1: 0.9646 - Recall: 0.9691 - Precision: 0.9633
+	 Val. Loss: 1.3363 - mIoU: 0.7930 - F1: 0.8646 - Recall: 0.8930 - Precision: 0.8893
+
+Epoch: 299 | Epoch Time: 2m 50s
+	Train Loss: 1.3213 - mIoU: 0.9321 - F1: 0.9632 - Recall: 0.9667 - Precision: 0.9633
+	 Val. Loss: 1.3357 - mIoU: 0.7978 - F1: 0.8679 - Recall: 0.8894 - Precision: 0.8978
+
+Epoch: 300 | Epoch Time: 2m 53s
+	Train Loss: 1.3232 - mIoU: 0.9304 - F1: 0.9616 - Recall: 0.9656 - Precision: 0.9619
+	 Val. Loss: 1.3364 - mIoU: 0.7926 - F1: 0.8642 - Recall: 0.8938 - Precision: 0.8880
+
