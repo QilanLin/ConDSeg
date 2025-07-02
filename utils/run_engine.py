@@ -33,10 +33,10 @@ def load_names(path, file_path):
 
 
 def load_data(path,val_name=None):
-    train_names_path = f"{path}/train.txt"
+    train_names_path = r"C:\Users\Administrator\PycharmProjects\ConDSeg\data\Kvasir-SEG\train.txt"
     # valid_names_path = f"{path}/val.txt"
     if val_name is None:
-        valid_names_path = f"{path}/val.txt"
+        valid_names_path = r"C:\Users\Administrator\PycharmProjects\ConDSeg\data\Kvasir-SEG\val.txt"
     else:
         valid_names_path = f"{path}/val_{val_name}.txt"
 

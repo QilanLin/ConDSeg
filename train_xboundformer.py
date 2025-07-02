@@ -8,6 +8,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 import numpy as np
+import pandas as pd
 import albumentations as A
 import torch
 from torch.utils.data import DataLoader
@@ -48,25 +49,42 @@ if __name__ == "__main__":
     lr = 1e-4
     early_stopping_patience = 100
 
-    resume_path = None
+    resume_path = "run_files/Kvasir-SEG/XBOUNDFORMER_Kvasir-SEG_None_lr0.0001_20250627-145618/checkpoint.pth"
 
     # make a folder
-    current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-    folder_name = f"XBOUNDFORMER_{dataset_name}_{val_name}_lr{lr}_{current_time}"
+    if resume_path:
+        # 从已有检查点路径中提取文件夹路径
+        save_dir = os.path.dirname(resume_path)
+        folder_name = os.path.basename(os.path.dirname(resume_path))
+    else:
+        current_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+        folder_name = f"XBOUNDFORMER_{dataset_name}_{val_name}_lr{lr}_{current_time}"
+        # Directories
+        base_dir = "data"
+        data_path = os.path.join(base_dir, dataset_name)
+        save_dir = os.path.join("run_files", dataset_name, folder_name)
+        if not os.path.exists(save_dir):
+            os.makedirs(save_dir)
 
-    # Directories
-    base_dir = "data"
-    data_path = os.path.join(base_dir, dataset_name)
-    save_dir = os.path.join("run_files", dataset_name, folder_name)
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
-
+    # 无论是否是恢复训练，都需要设置这些路径
     train_log_path = os.path.join(save_dir, "train_log.txt")
     checkpoint_path = os.path.join(save_dir, "checkpoint.pth")
 
-    train_log = open(train_log_path, "w")
-    train_log.write("\n")
-    train_log.close()
+    # 如果是新训练则创建新日志文件，否则追加到现有文件
+    if not resume_path:
+        train_log = open(train_log_path, "w")
+        train_log.write("\n")
+        train_log.close()
+    else:
+        # 在现有日志文件末尾添加恢复训练信息
+        with open(train_log_path, "a") as train_log:
+            train_log.write("\n\n" + "="*50 + "\n")
+            train_log.write(f"恢复训练，从检查点: {resume_path}\n")
+            train_log.write("="*50 + "\n\n")
+
+    # 数据路径设置
+    base_dir = "data"
+    data_path = os.path.join(base_dir, dataset_name)
 
     datetime_object = str(datetime.datetime.now())
     print_and_save(train_log_path, datetime_object)
@@ -131,14 +149,34 @@ if __name__ == "__main__":
 
     """ Training the model """
 
-    with open(os.path.join(save_dir, "train_log.csv"), "w") as f:
-        f.write(
-            "epoch,train_loss,train_mIoU,train_f1,train_recall,train_precision,valid_loss,valid_mIoU,valid_f1,valid_recall,valid_precision\n")
+    # 检查是否存在训练日志CSV文件，如果存在且是恢复训练，则从中读取最佳指标
+    csv_log_path = os.path.join(save_dir, "train_log.csv")
+    if resume_path and os.path.exists(csv_log_path):
+        try:
+            df = pd.read_csv(csv_log_path)
+            if not df.empty:
+                # 获取之前训练的最佳验证mIoU
+                best_valid_metrics = df['valid_mIoU'].max()
+                # 获取上次训练的最后一个epoch
+                last_epoch = int(df['epoch'].max())
+                print_and_save(train_log_path, f"从训练日志恢复最佳指标: {best_valid_metrics:.4f}, 从epoch {last_epoch} 继续训练")
+            else:
+                best_valid_metrics = 0.0
+                last_epoch = 0
+        except Exception as e:
+            print_and_save(train_log_path, f"读取训练日志出错: {str(e)}，重置指标为0")
+            best_valid_metrics = 0.0
+            last_epoch = 0
+    else:
+        best_valid_metrics = 0.0
+        last_epoch = 0
+        with open(csv_log_path, "w") as f:
+            f.write(
+                "epoch,train_loss,train_mIoU,train_f1,train_recall,train_precision,valid_loss,valid_mIoU,valid_f1,valid_recall,valid_precision\n")
 
-    best_valid_metrics = 0.0
     early_stopping_count = 0
 
-    for epoch in range(num_epochs):
+    for epoch in range(last_epoch, num_epochs):
         start_time = time.time()
 
         train_loss, train_metrics = train(model, train_loader, optimizer, loss_fn, device)
