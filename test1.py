@@ -158,19 +158,24 @@ def create_uncertainty_visualization(image, mask, fg_uncertainty_mask, bg_uncert
     bg_normalized = (((0.5 - bg_prob_mask) / 0.2) * 255).astype(np.uint8)
     uncertainty_heatmap[:,:,0] = bg_normalized
     
-    # 创建拼接图像 - 上排：原图、mask、叠加了所有不确定性区域的图像
-    # 下排：前景不确定性、背景不确定性、不确定性热力图
+    # 将原始预测转换为可视化掩码
+    pred_mask = (raw_pred > 0.5).astype(np.uint8) * 255
+    pred_mask = np.expand_dims(pred_mask, axis=-1)
+    pred_mask = np.concatenate([pred_mask, pred_mask, pred_mask], axis=2)
+    
+    # 创建拼接图像 - 上排：原图、标准mask、叠加了所有不确定性区域的图像
+    # 下排：前景不确定性、背景不确定性、预测mask
     visualization = np.zeros((h*2, w*3, 3), dtype=np.uint8)
     
     # 上排
     visualization[:h, :w] = image  # 原图
-    visualization[:h, w:2*w] = mask  # mask
+    visualization[:h, w:2*w] = mask  # 真实mask
     visualization[:h, 2*w:] = overlay_img  # 叠加了所有不确定性区域的原图
     
     # 下排
     visualization[h:, :w] = fg_overlay  # 前景不确定性
     visualization[h:, w:2*w] = bg_overlay  # 背景不确定性
-    visualization[h:, 2*w:] = uncertainty_heatmap  # 不确定性热力图
+    visualization[h:, 2*w:] = pred_mask  # 预测mask
     
     # 添加标签
     font = cv2.FONT_HERSHEY_SIMPLEX
@@ -179,22 +184,25 @@ def create_uncertainty_visualization(image, mask, fg_uncertainty_mask, bg_uncert
     cv2.putText(visualization, "All Uncertainty", (2*w+10, 20), font, 0.5, (255, 255, 255), 1, cv2.LINE_AA)
     cv2.putText(visualization, "FG Uncertainty", (10, h+20), font, 0.5, (255, 255, 255), 1, cv2.LINE_AA)
     cv2.putText(visualization, "BG Uncertainty", (w+10, h+20), font, 0.5, (255, 255, 255), 1, cv2.LINE_AA)
-    cv2.putText(visualization, "Uncertainty Heatmap", (2*w+10, h+20), font, 0.5, (255, 255, 255), 1, cv2.LINE_AA)
+    cv2.putText(visualization, "Predicted Mask", (2*w+10, h+20), font, 0.5, (255, 255, 255), 1, cv2.LINE_AA)
     
-    # 添加图例
-    legend_y = h + 50
-    # 前景不确定性图例
-    cv2.rectangle(visualization, (2*w+10, legend_y), (2*w+30, legend_y+20), FG_UNCERTAINTY_COLOR, -1)
-    cv2.putText(visualization, "FG Uncertainty (0.5-0.7)", (2*w+35, legend_y+15), font, 0.4, (255, 255, 255), 1, cv2.LINE_AA)
-    # 背景不确定性图例
-    cv2.rectangle(visualization, (2*w+10, legend_y+30), (2*w+30, legend_y+50), BG_UNCERTAINTY_COLOR, -1)
-    cv2.putText(visualization, "BG Uncertainty (0.3-0.5)", (2*w+35, legend_y+45), font, 0.4, (255, 255, 255), 1, cv2.LINE_AA)
-    # 前景轮廓图例
-    cv2.rectangle(visualization, (2*w+10, legend_y+60), (2*w+30, legend_y+80), FG_CONTOUR_COLOR, -1)
-    cv2.putText(visualization, "FG Contour", (2*w+35, legend_y+75), font, 0.4, (255, 255, 255), 1, cv2.LINE_AA)
-    # 背景轮廓图例
-    cv2.rectangle(visualization, (2*w+10, legend_y+90), (2*w+30, legend_y+110), BG_CONTOUR_COLOR, -1)
-    cv2.putText(visualization, "BG Contour", (2*w+35, legend_y+105), font, 0.4, (255, 255, 255), 1, cv2.LINE_AA)
+    # 添加缩小的不确定性图例（放在右上角）
+    legend_x = 2*w + 10
+    legend_y = 40
+    legend_font_size = 0.35
+    
+    # 在右上角添加缩小版的热力图图例
+    cv2.rectangle(visualization, (legend_x, legend_y), (legend_x+15, legend_y+15), FG_UNCERTAINTY_COLOR, -1)
+    cv2.putText(visualization, "FG (0.5-0.7)", (legend_x+20, legend_y+12), font, legend_font_size, (255, 255, 255), 1, cv2.LINE_AA)
+    
+    cv2.rectangle(visualization, (legend_x, legend_y+20), (legend_x+15, legend_y+35), BG_UNCERTAINTY_COLOR, -1)
+    cv2.putText(visualization, "BG (0.3-0.5)", (legend_x+20, legend_y+32), font, legend_font_size, (255, 255, 255), 1, cv2.LINE_AA)
+    
+    cv2.rectangle(visualization, (legend_x, legend_y+40), (legend_x+15, legend_y+55), FG_CONTOUR_COLOR, -1)
+    cv2.putText(visualization, "FG Contour", (legend_x+20, legend_y+52), font, legend_font_size, (255, 255, 255), 1, cv2.LINE_AA)
+    
+    cv2.rectangle(visualization, (legend_x, legend_y+60), (legend_x+15, legend_y+75), BG_CONTOUR_COLOR, -1)
+    cv2.putText(visualization, "BG Contour", (legend_x+20, legend_y+72), font, legend_font_size, (255, 255, 255), 1, cv2.LINE_AA)
     
     # 添加分割线
     cv2.line(visualization, (w, 0), (w, h*2), (255, 255, 255), 1)
@@ -264,9 +272,13 @@ def evaluate(model, save_path, test_x, test_y, size):
             # 提取前景和背景不确定性掩码
             fg_uncertainty_mask, bg_uncertainty_mask, full_uncertainty_mask, raw_pred = extract_uncertainty_masks(outputs)
             
+            # 创建预测掩码
+            mask_pred_np = mask_pred.cpu().numpy()
+            mask_pred_np = np.squeeze(mask_pred_np)
+            
             # 创建增强的不确定性可视化
             enhanced_visualization = create_uncertainty_visualization(
-                save_img, save_mask, fg_uncertainty_mask, bg_uncertainty_mask, raw_pred
+                save_img, save_mask, fg_uncertainty_mask, bg_uncertainty_mask, mask_pred_np
             )
             
         name_new = name.split("\\")[-1] if "\\" in name else name
@@ -276,6 +288,10 @@ def evaluate(model, save_path, test_x, test_y, size):
         
         # 保存增强的不确定性可视化
         cv2.imwrite(f"./enhanced_uncertainty_condseg/{name_new}_enhanced.png", enhanced_visualization)
+        
+        # 保存预测掩码到results目录
+        pred_mask = (mask_pred_np > 0.5).astype(np.uint8) * 255
+        cv2.imwrite(f"{save_path}/mask/{name_new}.png", pred_mask)
 
     print_score(metrics_score_1)
 
