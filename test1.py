@@ -6,7 +6,7 @@ import numpy as np
 import cv2
 from tqdm import tqdm
 import torch
-from network.model import ConDSeg
+from network.unetpp import UNetPlusPlus
 from utils.utils import create_dir, seeding
 from utils.utils import calculate_metrics
 from utils.run_engine import load_data
@@ -14,7 +14,7 @@ from utils.run_engine import load_data
 
 def extract_uncertainty_masks(outputs):
     """
-    处理ConDSeg模型的预测掩码，提取前景不确定性和背景不确定性区域
+    处理UNet++模型的预测掩码，提取前景不确定性和背景不确定性区域
     
     前景不确定性：概率在0.5-0.7之间
     背景不确定性：概率在0.3-0.4之间
@@ -228,8 +228,8 @@ def evaluate(model, save_path, test_x, test_y, size):
     metrics_score_1 = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     
     # 创建输出目录
-    create_dir("./test_exp_condseg")  # 原始不确定性掩码目录
-    create_dir("./enhanced_uncertainty_condseg")  # 增强的不确定性可视化目录
+    create_dir("./test_exp_unetpp")  # 原始不确定性掩码目录
+    create_dir("./enhanced_uncertainty_unetpp")  # 增强的不确定性可视化目录
 
     for i, (x, y) in tqdm(enumerate(zip(test_x, test_y)), total=len(test_x)):
         name = y.split("/")[-1].split(".")[0]
@@ -261,7 +261,7 @@ def evaluate(model, save_path, test_x, test_y, size):
         mask_tensor = mask_tensor.to(device)
 
         with torch.no_grad():
-            # ConDSeg模型返回多个输出(mask, mask_fg, mask_bg, mask_uc)
+            # UNet++模型返回多个输出(mask, mask_fg, mask_bg, mask_uc)
             outputs = model(image_for_model)
             mask_pred = outputs[0]  # 主要分割掩码
 
@@ -283,11 +283,11 @@ def evaluate(model, save_path, test_x, test_y, size):
             
         name_new = name.split("\\")[-1] if "\\" in name else name
         
-        # 保存原始不确定性掩码到test_exp_condseg目录
-        cv2.imwrite(f"./test_exp_condseg/{name_new}.jpg", full_uncertainty_mask)
+        # 保存原始不确定性掩码到test_exp_unetpp目录
+        cv2.imwrite(f"./test_exp_unetpp/{name_new}.jpg", full_uncertainty_mask)
         
         # 保存增强的不确定性可视化
-        cv2.imwrite(f"./enhanced_uncertainty_condseg/{name_new}_enhanced.png", enhanced_visualization)
+        cv2.imwrite(f"./enhanced_uncertainty_unetpp/{name_new}_enhanced.png", enhanced_visualization)
         
         # 保存预测掩码到results目录
         pred_mask = (mask_pred_np > 0.5).astype(np.uint8) * 255
@@ -313,9 +313,9 @@ if __name__ == "__main__":
     size = (256, 256)
     """ Load the checkpoint """
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model = ConDSeg()
+    model = UNetPlusPlus(n_channels=3, n_classes=1)
     model = model.to(device)
-    checkpoint_path = r"C:\Users\Administrator\PycharmProjects\ConDSeg\run_files\Kvasir-SEG\Kvasir-SEG_None_lr0.0001_20250623-183057\checkpoint.pth"
+    checkpoint_path = r"C:\Users\Administrator\PycharmProjects\ConDSeg\run_files\Kvasir-SEG\UNETPP_Kvasir-SEG_None_lr0.0001_20250626-200244\checkpoint.pth"
     model.load_state_dict(torch.load(checkpoint_path, map_location=device))
     model.eval()
 
@@ -324,10 +324,10 @@ if __name__ == "__main__":
     (train_x, train_y), (test_x, test_y) = load_data(path)
 
     # 创建输出目录
-    create_dir("./test_exp_condseg")  # 原始不确定性掩码目录
-    create_dir("./enhanced_uncertainty_condseg")  # 增强的不确定性可视化目录
+    create_dir("./test_exp_unetpp")  # 原始不确定性掩码目录
+    create_dir("./enhanced_uncertainty_unetpp")  # 增强的不确定性可视化目录
     
-    save_path = f"results/{dataset_name}/ConDSeg"
+    save_path = f"results/{dataset_name}/UNetPP"
 
     create_dir(f"{save_path}/mask")
     evaluate(model, save_path, test_x, test_y, size) 
