@@ -17,7 +17,7 @@ def extract_uncertainty_masks(outputs):
     处理ConDSeg模型的预测掩码，提取前景不确定性和背景不确定性区域
     
     前景不确定性：概率在0.5-0.7之间
-    背景不确定性：概率在0.3-0.5之间
+    背景不确定性：概率在0.3-0.4之间
     """
     # 主要分割掩码
     mask = outputs[0]
@@ -32,11 +32,11 @@ def extract_uncertainty_masks(outputs):
     # 前景不确定性区域 (0.5 <= prob < 0.7)
     fg_uncertainty_mask = (mask >= 0.5) & (mask < 0.7)
     
-    # 背景不确定性区域 (0.3 < prob < 0.5)
-    bg_uncertainty_mask = (mask > 0.3) & (mask < 0.5)
+    # 背景不确定性区域 (0.3 <= prob < 0.4)
+    bg_uncertainty_mask = (mask >= 0.3) & (mask < 0.4)
     
-    # 完整不确定性区域 (0.3 < prob < 0.7)
-    full_uncertainty_mask = (mask > 0.3) & (mask < 0.7)
+    # 完整不确定性区域 (0.3 <= prob < 0.4) 或 (0.5 <= prob < 0.7)
+    full_uncertainty_mask = ((mask >= 0.3) & (mask < 0.4)) | ((mask >= 0.5) & (mask < 0.7))
     
     # 前景不确定性掩码
     fg_uncertainty_mask_img = fg_uncertainty_mask.astype(np.int32) * 255
@@ -148,14 +148,14 @@ def create_uncertainty_visualization(image, mask, fg_uncertainty_mask, bg_uncert
     fg_prob_mask[(raw_pred >= 0.5) & (raw_pred < 0.7)] = raw_pred[(raw_pred >= 0.5) & (raw_pred < 0.7)]
     
     bg_prob_mask = np.zeros_like(raw_pred)
-    bg_prob_mask[(raw_pred > 0.3) & (raw_pred < 0.5)] = raw_pred[(raw_pred > 0.3) & (raw_pred < 0.5)]
+    bg_prob_mask[(raw_pred >= 0.3) & (raw_pred < 0.4)] = raw_pred[(raw_pred >= 0.3) & (raw_pred < 0.4)]
     
     # 将前景不确定性映射到红色通道（修复normalize调用）
     fg_normalized = ((fg_prob_mask - 0.5) / 0.2 * 255).astype(np.uint8)
     uncertainty_heatmap[:,:,2] = fg_normalized
     
     # 将背景不确定性映射到蓝色通道（修复normalize调用）
-    bg_normalized = (((0.5 - bg_prob_mask) / 0.2) * 255).astype(np.uint8)
+    bg_normalized = (((0.4 - bg_prob_mask) / 0.1) * 255).astype(np.uint8)
     uncertainty_heatmap[:,:,0] = bg_normalized
     
     # 将原始预测转换为可视化掩码
@@ -196,7 +196,7 @@ def create_uncertainty_visualization(image, mask, fg_uncertainty_mask, bg_uncert
     cv2.putText(visualization, "FG (0.5-0.7)", (legend_x+20, legend_y+12), font, legend_font_size, (255, 255, 255), 1, cv2.LINE_AA)
     
     cv2.rectangle(visualization, (legend_x, legend_y+20), (legend_x+15, legend_y+35), BG_UNCERTAINTY_COLOR, -1)
-    cv2.putText(visualization, "BG (0.3-0.5)", (legend_x+20, legend_y+32), font, legend_font_size, (255, 255, 255), 1, cv2.LINE_AA)
+    cv2.putText(visualization, "BG (0.3-0.4)", (legend_x+20, legend_y+32), font, legend_font_size, (255, 255, 255), 1, cv2.LINE_AA)
     
     cv2.rectangle(visualization, (legend_x, legend_y+40), (legend_x+15, legend_y+55), FG_CONTOUR_COLOR, -1)
     cv2.putText(visualization, "FG Contour", (legend_x+20, legend_y+52), font, legend_font_size, (255, 255, 255), 1, cv2.LINE_AA)
